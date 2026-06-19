@@ -1,0 +1,4214 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#FFD600">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Parrobyte bgremove">
+
+  <!-- ===== SEO CORE ===== -->
+  <title>bgremove - Free AI Background Remover | Parrobyte</title>
+  <meta name="description" content="bgremove by Parrobyte removes image backgrounds instantly with AI. Free, private, no signup. Upload JPG, PNG, WEBP and get transparent PNG. 100% client-side.">
+  <meta name="keywords" content="bgremove, remove background, background remover, ai background removal, transparent png, free background remover, online bgremove, image background eraser, parrobyte, delete background from image, auto background removal, png transparent background">
+  <meta name="author" content="Parrobyte">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://bgremove.parrobyte.co.in/">
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:url" content="https://bgremove.parrobyte.co.in/">
+  <meta property="og:site_name" content="Parrobyte bgremove">
+  <meta property="og:title" content="bgremove - Free AI Background Remover Online | Parrobyte">
+  <meta property="og:description" content="Remove image backgrounds instantly with AI. Free, private, unlimited. Upload any image and download transparent PNG in seconds.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bgremove.parrobyte.co.in/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Parrobyte bgremove - AI Background Removal Tool">
+  <meta property="og:locale" content="en_US">
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="bgremove - Free AI Background Remover | Parrobyte">
+  <meta name="twitter:description" content="Remove image backgrounds instantly with AI. Free, private, unlimited. Get transparent PNG in seconds.">
+  <meta name="twitter:image" content="https://bgremove.parrobyte.co.in/og-image.png">
+
+  <!-- ===== PRECONNECT / DNS-PREFETCH ===== -->
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://huggingface.co" crossorigin>
+
+  <!-- ===== FAVICON ===== -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🦜%3C/text%3E%3C/svg%3E">
+
+  <!-- ===== STRUCTURED DATA (JSON-LD) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Parrobyte bgremove",
+        "description": "Free AI-powered background remover tool. Remove backgrounds from images instantly in your browser. No upload, no signup, completely private.",
+        "applicationCategory": "PhotoApplication",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "1250"
+        },
+        "featureList": "AI background removal, Transparent PNG output, Batch processing, Edge refinement, Background replacement",
+        "url": "https://bgremove.parrobyte.co.in/",
+        "image": "https://bgremove.parrobyte.co.in/og-image.png"
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://bgremove.parrobyte.co.in/",
+        "name": "Parrobyte bgremove",
+        "description": "Free online AI background remover tool",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://bgremove.parrobyte.co.in/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://bgremove.parrobyte.co.in/#webpage",
+        "url": "https://bgremove.parrobyte.co.in/",
+        "name": "bgremove - Free AI Background Remover Online",
+        "description": "Remove image backgrounds instantly with AI using Parrobyte bgremove. Free, private, unlimited. Upload any image and get transparent PNG.",
+        "isPartOf": {"@id": "https://bgremove.parrobyte.co.in/#website"},
+        "primaryImageOfPage": "https://bgremove.parrobyte.co.in/og-image.png",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".hero-title", ".hero-desc"]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is bgremove?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "bgremove is a free AI-powered online tool by Parrobyte that removes backgrounds from images instantly. It runs entirely in your browser for complete privacy.
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is bgremove free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, bgremove is 100% free with no signup required, no watermarks, and no limits on the number of images you can process.
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does bgremove work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "bgremove uses advanced AI (Transformers.js with MODNet model) running entirely in your browser. Your images are never uploaded to any server, ensuring complete privacy.
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What image formats does bgremove support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "bgremove supports JPG, JPEG, PNG, WEBP, BMP, TIFF, AVIF, and HEIC image formats. Output is always high-quality transparent PNG.
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFD600',
+            'primary-focus': '#E6C100',
+            'primary-content': '#000000',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+    :root {
+      --color-primary: #FFD600;
+      --color-primary-dark: #E6C100;
+      --color-black: #000000;
+      --color-white: #FFFFFF;
+      --glass-bg: rgba(255, 255, 255, 0.75);
+      --glass-border: rgba(255, 255, 255, 0.3);
+      --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    [data-theme="dark"] {
+      --glass-bg: rgba(30, 30, 35, 0.8);
+      --glass-border: rgba(255, 255, 255, 0.1);
+      --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-primary) transparent;
+    }
+
+    *::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    *::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background: var(--color-primary);
+      border-radius: 3px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* ===== GLASSMORPHISM ===== */
+    .glass {
+      background: var(--glass-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--glass-shadow);
+    }
+
+    .glass-strong {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    }
+
+    [data-theme="dark"] .glass-strong {
+      background: rgba(30, 30, 35, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .glass-card:hover {
+      background: rgba(255, 255, 255, 0.75);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      transform: translateY(-2px);
+    }
+
+    [data-theme="dark"] .glass-card {
+      background: rgba(45, 45, 55, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    [data-theme="dark"] .glass-card:hover {
+      background: rgba(45, 45, 55, 0.75);
+    }
+
+    /* ===== HERO GRADIENT ===== */
+    .hero-gradient {
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 30%, rgba(255, 214, 0, 0.3) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 70%, rgba(255, 248, 220, 0.4) 0%, transparent 50%),
+        linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 40%, #F5F5F5 100%);
+    }
+
+    [data-theme="dark"] .hero-gradient {
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 30%, rgba(255, 214, 0, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 70%, rgba(255, 248, 220, 0.1) 0%, transparent 50%),
+        linear-gradient(180deg, #1a1a1f 0%, #151519 40%, #111114 100%);
+    }
+
+    /* ===== PARTICLE CANVAS ===== */
+    #particle-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% {
+        box-shadow: 0 0 20px rgba(255, 214, 0, 0.3);
+      }
+      50% {
+        box-shadow: 0 0 40px rgba(255, 214, 0, 0.6);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+
+    @keyframes bounce-in {
+      0% { transform: scale(0); opacity: 0; }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes ripple {
+      0% { transform: scale(0); opacity: 1; }
+      100% { transform: scale(4); opacity: 0; }
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 0.4s ease-out forwards;
+    }
+
+    .animate-slide-in-right {
+      animation: slideInRight 0.5s ease-out forwards;
+    }
+
+    .animate-pulse-glow {
+      animation: pulse-glow 2s ease-in-out infinite;
+    }
+
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .animate-spin-slow {
+      animation: spin-slow 3s linear infinite;
+    }
+
+    .animate-bounce-in {
+      animation: bounce-in 0.5s ease-out forwards;
+    }
+
+    .delay-100 { animation-delay: 0.1s; opacity: 0; }
+    .delay-200 { animation-delay: 0.2s; opacity: 0; }
+    .delay-300 { animation-delay: 0.3s; opacity: 0; }
+    .delay-400 { animation-delay: 0.4s; opacity: 0; }
+    .delay-500 { animation-delay: 0.5s; opacity: 0; }
+
+    /* ===== UPLOAD ZONE ===== */
+    .upload-zone {
+      border: 3px dashed rgba(255, 214, 0, 0.4);
+      border-radius: 1.5rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .upload-zone::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255, 214, 0, 0.05), transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .upload-zone:hover::before,
+    .upload-zone.drag-active::before {
+      opacity: 1;
+    }
+
+    .upload-zone:hover,
+    .upload-zone.drag-active {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 30px rgba(255, 214, 0, 0.15);
+      transform: scale(1.01);
+    }
+
+    .upload-zone.drag-active {
+      background: rgba(255, 214, 0, 0.05);
+    }
+
+    /* ===== COMPARISON SLIDER ===== */
+    .comparison-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem;
+      user-select: none;
+      touch-action: none;
+    }
+
+    .comparison-after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      overflow: hidden;
+      border-right: 3px solid var(--color-primary);
+    }
+
+    .comparison-after img,
+    .comparison-after canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      max-width: none;
+    }
+
+    .comparison-slider-handle {
+      position: absolute;
+      top: 0;
+      width: 44px;
+      height: 44px;
+      background: var(--color-primary);
+      border: 3px solid white;
+      border-radius: 50%;
+      cursor: ew-resize;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+      transform: translateX(-50%);
+      top: 50%;
+      margin-top: -22px;
+    }
+
+    .comparison-slider-handle i {
+      color: black;
+      font-size: 14px;
+    }
+
+    /* ===== ZOOM CONTAINER ===== */
+    .zoom-container {
+      overflow: hidden;
+      cursor: grab;
+      position: relative;
+    }
+
+    .zoom-container:active {
+      cursor: grabbing;
+    }
+
+    .zoom-container img,
+    .zoom-container canvas {
+      transition: none;
+      will-change: transform;
+    }
+
+    /* ===== IMAGE GRID ===== */
+    .image-grid-item {
+      position: relative;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .image-grid-item:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .image-grid-item .status-badge {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      z-index: 5;
+    }
+
+    .image-grid-item .remove-btn {
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+      z-index: 5;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .image-grid-item:hover .remove-btn {
+      opacity: 1;
+    }
+
+    /* ===== TOOL PANEL ===== */
+    .tool-panel {
+      border-radius: 1rem;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(8px);
+    }
+
+    [data-theme="dark"] .tool-panel {
+      background: rgba(45, 45, 55, 0.5);
+    }
+
+    .tool-btn {
+      transition: all 0.2s ease;
+      border-radius: 0.75rem;
+      padding: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      cursor: pointer;
+      border: 2px solid transparent;
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    .tool-btn:hover {
+      background: rgba(255, 214, 0, 0.15);
+      border-color: rgba(255, 214, 0, 0.3);
+    }
+
+    .tool-btn.active {
+      background: rgba(255, 214, 0, 0.25);
+      border-color: var(--color-primary);
+    }
+
+    [data-theme="dark"] .tool-btn {
+      background: rgba(60, 60, 70, 0.5);
+      color: #e0e0e0;
+    }
+
+    /* ===== RANGE SLIDER ===== */
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 6px;
+      border-radius: 3px;
+      background: linear-gradient(to right, var(--color-primary), #ddd);
+      outline: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      cursor: pointer;
+      border: 2px solid white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      cursor: pointer;
+      border: 2px solid white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    /* ===== PROGRESS BAR ===== */
+    .progress-bar-custom {
+      height: 8px;
+      border-radius: 4px;
+      background: rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .progress-bar-custom .progress-fill {
+      height: 100%;
+      border-radius: 4px;
+      background: linear-gradient(90deg, var(--color-primary), #FFE033);
+      transition: width 0.3s ease;
+      position: relative;
+    }
+
+    .progress-bar-custom .progress-fill::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+    }
+
+    /* ===== TOAST ===== */
+    .toast-item {
+      animation: slideInRight 0.3s ease-out forwards;
+    }
+
+    .toast-item.hide {
+      animation: fadeIn 0.3s ease-out reverse forwards;
+    }
+
+    /* ===== BOTTOM MOBILE BAR ===== */
+    .mobile-action-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      padding: 0.5rem 1rem calc(0.5rem + env(safe-area-inset-bottom));
+      z-index: 50;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    [data-theme="dark"] .mobile-action-bar {
+      background: rgba(25, 25, 30, 0.95);
+      border-top-color: rgba(255, 255, 255, 0.08);
+    }
+
+    /* ===== SCROLL TO TOP ===== */
+    .scroll-to-top {
+      position: fixed;
+      bottom: 5rem;
+      right: 1.5rem;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      z-index: 40;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+    }
+
+    .scroll-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .scroll-to-top:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    /* ===== LOADING SKELETON ===== */
+    .skeleton {
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+      border-radius: 0.5rem;
+    }
+
+    [data-theme="dark"] .skeleton {
+      background: linear-gradient(90deg, #333 25%, #444 50%, #333 75%);
+      background-size: 200% 100%;
+    }
+
+    /* ===== CONFETTI CANVAS ===== */
+    #confetti-canvas {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* ===== PRINT STYLES ===== */
+    @media print {
+      .no-print { display: none !important; }
+    }
+
+    /* ===== REDUCED MOTION ===== */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* ===== FOCUS VISIBLE ===== */
+    *:focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    /* ===== STEPPER ===== */
+    .stepper-circle {
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .stepper-circle.active {
+      background: var(--color-primary) !important;
+      border-color: var(--color-primary) !important;
+      color: #000 !important;
+      box-shadow: 0 0 20px rgba(255, 214, 0, 0.4);
+      transform: scale(1.1);
+    }
+    .stepper-circle.completed {
+      background: #22c55e !important;
+      border-color: #22c55e !important;
+      color: #fff !important;
+    }
+    .stepper-circle.processing {
+      animation: stepper-pulse 1.5s ease-in-out infinite;
+    }
+    @keyframes stepper-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(255, 214, 0, 0.5); }
+      50% { box-shadow: 0 0 0 12px rgba(255, 214, 0, 0); }
+    }
+
+    /* ===== UPLOAD FEEDBACK ===== */
+    .upload-zone.has-files {
+      padding: 1.5rem !important;
+      border-color: rgba(255, 214, 0, 0.6) !important;
+      background: rgba(255, 214, 0, 0.03) !important;
+    }
+    .upload-flash-active {
+      opacity: 1 !important;
+    }
+    #upload-compact {
+      animation: fadeInUp 0.4s ease-out;
+    }
+    #upload-status-banner {
+      animation: slideDown 0.5s ease-out;
+    }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .image-grid-item {
+      animation: popIn 0.35s ease-out backwards;
+    }
+    @keyframes popIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      70% { transform: scale(1.05); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* ===== STEP LIST ===== */
+    .step-list-item {
+      transition: all 0.3s ease;
+    }
+    .step-list-item.active {
+      background: rgba(255, 214, 0, 0.1);
+    }
+    .step-list-item.done {
+      opacity: 0.5;
+    }
+    .step-list-item.done .step-num {
+      background: #22c55e !important;
+      color: white !important;
+    }
+    .step-list-item.active .step-num {
+      background: var(--color-primary) !important;
+      color: #000 !important;
+      animation: step-bounce 0.5s ease;
+    }
+    @keyframes step-bounce {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    /* ===== LIVE STATUS PILL ===== */
+    #live-status-pill {
+      animation: fadeIn 0.3s ease;
+    }
+
+    /* ===== BIGGER PROGRESS BAR ===== */
+    .progress-bar-custom {
+      height: 16px;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      position: relative;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.08);
+    }
+    .progress-bar-custom .progress-fill {
+      height: 100%;
+      border-radius: 8px;
+      background: linear-gradient(90deg, var(--color-primary) 0%, #FFE033 50%, var(--color-primary) 100%);
+      background-size: 200% 100%;
+      transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      animation: shimmer 2s infinite;
+    }
+    .progress-bar-custom .progress-fill::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 30px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+      animation: bar-glow 1s infinite;
+    }
+    @keyframes bar-glow {
+      0% { transform: translateX(-30px); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateX(30px); opacity: 0; }
+    }
+
+    /* ===== SELECTION ===== */
+    ::selection {
+      background: rgba(255, 214, 0, 0.3);
+      color: inherit;
+    }
+
+    /* ===== STAT CARD ===== */
+    .stat-card {
+      text-align: center;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(8px);
+      transition: all 0.3s ease;
+    }
+
+    .stat-card:hover {
+      background: rgba(255, 255, 255, 0.7);
+      transform: translateY(-4px);
+    }
+
+    [data-theme="dark"] .stat-card {
+      background: rgba(45, 45, 55, 0.5);
+    }
+
+    /* ===== FEATURE CARD ===== */
+    .feature-card {
+      padding: 2rem;
+      border-radius: 1.25rem;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      border-color: rgba(255, 214, 0, 0.3);
+    }
+
+    [data-theme="dark"] .feature-card {
+      background: rgba(45, 45, 55, 0.6);
+      border-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .feature-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 1rem;
+      background: linear-gradient(135deg, rgba(255, 214, 0, 0.2), rgba(255, 214, 0, 0.05));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 1.5rem;
+      color: #b39700;
+    }
+
+    /* ===== TOGGLE SWITCH ===== */
+    .toggle-switch {
+      position: relative;
+      width: 48px;
+      height: 26px;
+      background: #ccc;
+      border-radius: 13px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .toggle-switch.active {
+      background: var(--color-primary);
+    }
+
+    .toggle-switch::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 50%;
+      transition: transform 0.3s;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .toggle-switch.active::after {
+      transform: translateX(22px);
+    }
+
+    /* ===== COLOR PICKER CUSTOM ===== */
+    input[type="color"] {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 48px;
+      height: 36px;
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      border-radius: 0.5rem;
+      cursor: pointer;
+      padding: 2px;
+      background: white;
+    }
+
+    input[type="color"]::-webkit-color-swatch-wrapper {
+      padding: 0;
+    }
+
+    input[type="color"]::-webkit-color-swatch {
+      border: none;
+      border-radius: 0.3rem;
+    }
+
+    /* ===== MINI PREVIEW ===== */
+    .mini-preview {
+      border-radius: 0.75rem;
+      overflow: hidden;
+      border: 2px solid transparent;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+
+    .mini-preview.active {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(255, 214, 0, 0.2);
+    }
+
+    .mini-preview:hover {
+      border-color: rgba(255, 214, 0, 0.5);
+    }
+  </style>
+<base target="_blank">
+</head>
+<body class="min-h-screen bg-base-100 overflow-x-hidden text-base-content">
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar sticky top-0 z-50 glass min-h-[4rem] px-4 lg:px-8" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-start gap-2">
+      <div class="dropdown lg:hidden">
+        <button tabindex="0" class="btn btn-ghost btn-circle" aria-label="Open menu">
+          <i class="fas fa-bars text-lg"></i>
+        </button>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[60] p-2 shadow-xl glass-strong rounded-box w-64">
+          <li><a href="#upload" class="flex items-center gap-2"><i class="fas fa-cloud-upload-alt text-primary"></i>Upload</a></li>
+          <li><a href="#preview" class="flex items-center gap-2"><i class="fas fa-eye text-primary"></i>Preview</a></li>
+          <li><a href="#features" class="flex items-center gap-2"><i class="fas fa-star text-primary"></i>Features</a></li>
+          <li><label for="settings-drawer" class="flex items-center gap-2 cursor-pointer"><i class="fas fa-cog text-primary"></i>Settings</label></li>
+          <li><div class="divider my-0"></div></li>
+          <li><a href="https://parrobyte.co.in" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-primary"><i class="fas fa-globe"></i>parrobyte.co.in</a></li>
+        </ul>
+      </div>
+      <a href="#" class="flex items-center gap-2 text-xl font-bold tracking-tight hover:opacity-80 transition-opacity" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+        <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-lg">
+          <i class="fas fa-crow text-black text-lg"></i>
+        </div>
+        <span class="hidden sm:inline">Parro<span class="text-primary">byte</span></span>
+      </a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 gap-1">
+        <li><a href="#upload" class="font-medium hover:text-primary transition-colors"><i class="fas fa-cloud-upload-alt mr-2"></i>Upload</a></li>
+        <li><a href="#preview" class="font-medium hover:text-primary transition-colors"><i class="fas fa-eye mr-2"></i>Preview</a></li>
+        <li><a href="#features" class="font-medium hover:text-primary transition-colors"><i class="fas fa-star mr-2"></i>Features</a></li>
+        <li><a href="https://parrobyte.co.in" target="_blank" rel="noopener noreferrer" class="font-medium hover:text-primary transition-colors text-primary/80"><i class="fas fa-globe mr-2"></i>parrobyte.co.in</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end gap-2">
+      <button id="theme-toggle" class="btn btn-ghost btn-circle" aria-label="Toggle theme">
+        <i class="fas fa-sun text-lg" id="theme-icon"></i>
+      </button>
+      <label for="settings-drawer" class="btn btn-ghost btn-circle hidden lg:flex" aria-label="Settings">
+        <i class="fas fa-cog text-lg"></i>
+      </label>
+      <a href="#upload" class="btn btn-primary btn-sm md:btn-md gap-2 shadow-lg hover:shadow-xl transition-all">
+        <i class="fas fa-cloud-upload-alt"></i>
+        <span class="hidden sm:inline">Upload</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="hero" class="relative min-h-[92vh] flex items-center hero-gradient overflow-hidden">
+    <canvas id="particle-canvas"></canvas>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10 py-20">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-7xl mx-auto">
+        <div class="text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6 animate-fade-in-up">
+            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+            <span class="text-sm font-medium">AI-Powered & Privacy-Focused</span>
+          </div>
+          <h1 class="hero-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] mb-6 animate-fade-in-up delay-100">
+            <span class="text-primary">bgremove</span> —<br>
+            AI Background<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-400">Remover Free</span>
+          </h1>
+          <p class="hero-desc text-lg sm:text-xl text-base-content/70 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed animate-fade-in-up delay-200">
+            Remove image backgrounds instantly with AI. bgremove is 100% free,
+            runs entirely in your browser — no uploads, no tracking, complete privacy.
+            Get transparent PNG in seconds.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10 animate-fade-in-up delay-300">
+            <a href="#upload" class="btn btn-primary btn-lg gap-3 shadow-xl hover:shadow-2xl hover:scale-105 transition-all text-lg px-8 animate-pulse-glow">
+              <i class="fas fa-cloud-upload-alt text-xl"></i>
+              Upload Image
+            </a>
+            <button id="try-sample-btn" class="btn btn-outline btn-lg gap-3 hover:bg-primary hover:text-black hover:border-primary transition-all text-lg px-8">
+              <i class="fas fa-image text-xl"></i>
+              Try Sample
+            </button>
+          </div>
+          <div class="flex flex-wrap gap-6 justify-center lg:justify-start text-sm text-base-content/60 animate-fade-in-up delay-400">
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check-circle text-primary"></i>
+              <span>No signup</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check-circle text-primary"></i>
+              <span>No watermarks</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check-circle text-primary"></i>
+              <span>Unlimited</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check-circle text-primary"></i>
+              <span>HD quality</span>
+            </div>
+          </div>
+        </div>
+        <div class="relative hidden lg:block animate-fade-in-up delay-300">
+          <div class="relative mx-auto" style="max-width: 520px;">
+            <div class="absolute -inset-4 bg-gradient-to-r from-primary/20 to-yellow-400/20 rounded-3xl blur-2xl"></div>
+            <div class="relative glass-strong rounded-2xl p-4 shadow-2xl">
+              <div class="relative rounded-xl overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 aspect-square flex items-center justify-center" id="hero-demo-container">
+                <div class="text-center p-8" id="hero-demo-placeholder">
+                  <div class="w-32 h-32 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center animate-float">
+                    <i class="fas fa-image text-5xl text-primary/60"></i>
+                  </div>
+                  <p class="text-gray-400 text-sm">Upload an image to see the magic</p>
+                </div>
+                <canvas id="hero-demo-canvas" class="absolute inset-0 w-full h-full hidden"></canvas>
+              </div>
+              <div class="flex items-center justify-between mt-4 px-2">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
+                    <i class="fas fa-file-image text-primary"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold">Original</p>
+                    <p class="text-xs text-base-content/50">1920 x 1080</p>
+                  </div>
+                </div>
+                <div class="text-primary"><i class="fas fa-arrow-right text-xl"></i></div>
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center">
+                    <i class="fas fa-check text-green-600"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold">Removed</p>
+                    <p class="text-xs text-base-content/50">Transparent PNG</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-base-100 to-transparent z-10"></div>
+  </section>
+
+  <!-- ==================== UPLOAD SECTION ==================== -->
+  <section id="upload" class="py-16 sm:py-20 lg:py-24 bg-base-100 relative">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 max-w-6xl">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
+          <i class="fas fa-cloud-upload-alt"></i>
+          Upload
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Upload Images to bgremove</h2>
+        <p class="text-base-content/60 text-lg max-w-2xl mx-auto">Drag & drop, paste from clipboard, browse files, or use your camera. bgremove supports JPG, PNG, WEBP, BMP, TIFF, AVIF and HEIC formats.</p>
+      </div>
+
+      <!-- Upload Zone -->
+      <div class="upload-zone glass-card p-8 sm:p-12 lg:p-16 text-center cursor-pointer mb-6 relative" id="upload-zone">
+        <input type="file" id="file-input" class="hidden" accept="image/*" multiple aria-label="Choose image files">
+        <input type="file" id="camera-input" class="hidden" accept="image/*" capture="environment" aria-label="Take photo">
+        <!-- Default Prompt -->
+        <div id="upload-prompt">
+          <div class="w-24 h-24 mx-auto mb-6 rounded-2xl bg-primary/10 flex items-center justify-center animate-float">
+            <i class="fas fa-cloud-upload-alt text-4xl text-primary"></i>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold mb-3">Drag & Drop Images Here</h3>
+          <p class="text-base-content/50 mb-6 max-w-md mx-auto">Drop your images anywhere, or click to browse. You can also paste (Ctrl+V) images from your clipboard.</p>
+          <div class="flex flex-col sm:flex-row gap-3 justify-center pointer-events-none">
+            <button id="browse-btn" class="btn btn-primary gap-2 pointer-events-auto"><i class="fas fa-folder-open"></i>Browse Files</button>
+            <button id="camera-btn" class="btn btn-outline gap-2 sm:hidden pointer-events-auto"><i class="fas fa-camera"></i>Camera</button>
+            <button id="paste-btn" class="btn btn-outline gap-2 hidden md:flex pointer-events-auto"><i class="fas fa-paste"></i>Paste</button>
+          </div>
+        </div>
+        <!-- Compact State (shown after upload) -->
+        <div id="upload-compact" class="hidden">
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center animate-bounce-in">
+                <i class="fas fa-check text-green-600 text-xl"></i>
+              </div>
+              <div class="text-left">
+                <p class="font-bold text-lg"><span id="upload-success-count">0</span> image(s) ready</p>
+                <p class="text-sm text-base-content/50">Click "Remove Background" to start</p>
+              </div>
+            </div>
+            <button id="add-more-btn" class="btn btn-primary btn-sm gap-2 pointer-events-auto"><i class="fas fa-plus"></i>Add More</button>
+          </div>
+        </div>
+        <!-- Loading State -->
+        <div id="upload-loading" class="hidden">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full border-4 border-primary border-t-transparent animate-spin"></div>
+          <p class="text-lg font-medium" id="upload-loading-text">Reading file 1 of 1...</p>
+        </div>
+        <!-- Success Flash Overlay -->
+        <div id="upload-flash" class="absolute inset-0 rounded-[inherit] border-4 border-green-400 opacity-0 pointer-events-none transition-opacity duration-500"></div>
+      </div>
+
+      <!-- Upload Status Banner -->
+      <div id="upload-status-banner" class="hidden mb-6">
+        <div class="alert alert-success shadow-lg glass-strong">
+          <div class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-2xl"></i>
+            <div>
+              <p class="font-bold">Upload Successful!</p>
+              <p class="text-sm"><span id="banner-file-count">0</span> image(s) added. Ready to remove backgrounds.</p>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-sm gap-2" onclick="document.getElementById('process-section').scrollIntoView({behavior:'smooth'})">
+            <i class="fas fa-crow"></i>Remove Background Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Supported Formats -->
+      <div class="flex flex-wrap justify-center gap-2 mb-8">
+        <span class="badge badge-ghost gap-1"><i class="fas fa-file-image text-xs"></i>JPG</span>
+        <span class="badge badge-ghost gap-1"><i class="fas fa-file-image text-xs"></i>PNG</span>
+        <span class="badge badge-ghost gap-1"><i class="fas fa-file-image text-xs"></i>WEBP</span>
+        <span class="badge badge-ghost gap-1"><i class="fas fa-file-image text-xs"></i>BMP</span>
+        <span class="badge badge-ghost gap-1"><i class="fas fa-file-image text-xs"></i>TIFF</span>
+        <span class="badge badge-ghost gap-1"><i class="fas fa-file-image text-xs"></i>AVIF</span>
+        <span class="badge badge-ghost gap-1"><i class="fas fa-file-image text-xs"></i>HEIC</span>
+      </div>
+
+      <!-- Image Metadata Display -->
+      <div id="metadata-panel" class="hidden mb-8">
+        <div class="glass-card rounded-2xl p-6">
+          <h4 class="font-bold mb-4 flex items-center gap-2"><i class="fas fa-info-circle text-primary"></i>Image Information</h4>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4" id="metadata-grid"></div>
+        </div>
+      </div>
+
+      <!-- Image Grid -->
+      <div id="image-grid-container" class="hidden mb-8">
+        <div class="flex items-center justify-between mb-4">
+          <h4 class="font-bold text-lg flex items-center gap-2"><i class="fas fa-images text-primary"></i>Uploaded Images <span id="image-count" class="badge badge-primary badge-sm">0</span></h4>
+          <button id="clear-all-btn" class="btn btn-ghost btn-sm text-error gap-1"><i class="fas fa-trash-alt"></i>Clear All</button>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4" id="image-grid"></div>
+      </div>
+
+      <!-- Process Button -->
+      <div class="text-center" id="process-section">
+        <button id="process-btn" class="btn btn-primary btn-lg gap-3 shadow-xl hover:shadow-2xl hover:scale-105 transition-all text-lg px-10 hidden">
+          <i class="fas fa-crow text-xl"></i>
+          Remove Background
+        </button>
+        <p class="text-sm text-base-content/50 mt-4" id="model-status-text">AI model downloads on first use (~40MB). Use local server for best results.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== STEPPER + PROCESSING SECTION ==================== -->
+  <section id="processing" class="py-12 bg-base-100 hidden">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <!-- STEPPER NAVIGATION -->
+      <div class="mb-8">
+        <div class="flex items-center justify-between relative">
+          <!-- Connector Line Background -->
+          <div class="absolute top-1/2 left-0 right-0 h-1 bg-base-300 rounded-full -translate-y-1/2 mx-8 sm:mx-16 z-0"></div>
+          <!-- Connector Line Active -->
+          <div class="absolute top-1/2 left-0 h-1 bg-primary rounded-full -translate-y-1/2 mx-8 sm:mx-16 z-0 transition-all duration-700 ease-out" id="stepper-line" style="width: 0%"></div>
+
+          <!-- Step 1: Upload -->
+          <div class="stepper-step relative z-10 flex flex-col items-center gap-2 flex-1" data-step="1">
+            <div class="stepper-circle w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-primary text-black flex items-center justify-center shadow-lg transition-all duration-500 border-4 border-primary" id="step-circle-1">
+              <i class="fas fa-cloud-upload-alt text-lg sm:text-xl" id="step-icon-1"></i>
+            </div>
+            <div class="text-center">
+              <p class="text-xs sm:text-sm font-bold" id="step-label-1">Upload</p>
+              <p class="text-[10px] sm:text-xs text-base-content/50 hidden sm:block" id="step-desc-1">Add images</p>
+            </div>
+          </div>
+
+          <!-- Step 2: AI Processing -->
+          <div class="stepper-step relative z-10 flex flex-col items-center gap-2 flex-1" data-step="2">
+            <div class="stepper-circle w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-base-300 text-base-content/40 flex items-center justify-center shadow-md transition-all duration-500 border-4 border-base-300" id="step-circle-2">
+              <i class="fas fa-brain text-lg sm:text-xl" id="step-icon-2"></i>
+            </div>
+            <div class="text-center">
+              <p class="text-xs sm:text-sm font-bold text-base-content/40" id="step-label-2">AI Processing</p>
+              <p class="text-[10px] sm:text-xs text-base-content/50 hidden sm:block" id="step-desc-2">Remove BG</p>
+            </div>
+          </div>
+
+          <!-- Step 3: Complete -->
+          <div class="stepper-step relative z-10 flex flex-col items-center gap-2 flex-1" data-step="3">
+            <div class="stepper-circle w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-base-300 text-base-content/40 flex items-center justify-center shadow-md transition-all duration-500 border-4 border-base-300" id="step-circle-3">
+              <i class="fas fa-check text-lg sm:text-xl" id="step-icon-3"></i>
+            </div>
+            <div class="text-center">
+              <p class="text-xs sm:text-sm font-bold text-base-content/40" id="step-label-3">Complete</p>
+              <p class="text-[10px] sm:text-xs text-base-content/50 hidden sm:block" id="step-desc-3">Download</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROGRESS PANEL -->
+      <div class="glass-card rounded-2xl p-6 sm:p-8">
+
+        <!-- BIG STATUS INDICATOR -->
+        <div class="text-center mb-6" id="status-indicator">
+          <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center relative" id="status-spinner-wrapper">
+            <i class="fas fa-crow text-4xl text-primary" id="status-main-icon"></i>
+            <!-- Processing ring (hidden by default) -->
+            <div class="absolute inset-0 rounded-full border-4 border-primary border-t-transparent animate-spin hidden" id="status-processing-ring"></div>
+          </div>
+          <h3 class="text-2xl font-black mb-2" id="processing-title">Ready to bgremove</h3>
+          <p class="text-base-content/60" id="processing-desc">Click "Remove Background" to start</p>
+          <!-- Live Step Text -->
+          <div class="mt-3 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold hidden" id="live-status-pill">
+            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            <span id="live-status-text">Preparing...</span>
+          </div>
+        </div>
+
+        <!-- NUMBERED STEP LIST -->
+        <div class="max-w-md mx-auto mb-6 hidden" id="step-list">
+          <div class="step-list-item flex items-center gap-3 p-3 rounded-lg transition-all" id="sl-item-1">
+            <span class="step-num w-7 h-7 rounded-full bg-base-300 text-xs font-bold flex items-center justify-center flex-shrink-0" id="sl-num-1">1</span>
+            <span class="text-sm" id="sl-text-1">Load AI model</span>
+          </div>
+          <div class="step-list-item flex items-center gap-3 p-3 rounded-lg transition-all" id="sl-item-2">
+            <span class="step-num w-7 h-7 rounded-full bg-base-300 text-xs font-bold flex items-center justify-center flex-shrink-0" id="sl-num-2">2</span>
+            <span class="text-sm" id="sl-text-2">Read image</span>
+          </div>
+          <div class="step-list-item flex items-center gap-3 p-3 rounded-lg transition-all" id="sl-item-3">
+            <span class="step-num w-7 h-7 rounded-full bg-base-300 text-xs font-bold flex items-center justify-center flex-shrink-0" id="sl-num-3">3</span>
+            <span class="text-sm" id="sl-text-3">AI analyzing pixels</span>
+          </div>
+          <div class="step-list-item flex items-center gap-3 p-3 rounded-lg transition-all" id="sl-item-4">
+            <span class="step-num w-7 h-7 rounded-full bg-base-300 text-xs font-bold flex items-center justify-center flex-shrink-0" id="sl-num-4">4</span>
+            <span class="text-sm" id="sl-text-4">Generate mask</span>
+          </div>
+          <div class="step-list-item flex items-center gap-3 p-3 rounded-lg transition-all" id="sl-item-5">
+            <span class="step-num w-7 h-7 rounded-full bg-base-300 text-xs font-bold flex items-center justify-center flex-shrink-0" id="sl-num-5">5</span>
+            <span class="text-sm" id="sl-text-5">Apply & finalize</span>
+          </div>
+        </div>
+
+        <!-- Model Download Progress -->
+        <div id="model-download-progress" class="mb-6 hidden">
+          <div class="flex justify-between text-sm mb-2">
+            <span class="font-medium flex items-center gap-2"><i class="fas fa-download text-primary"></i><span id="model-file-name">Downloading AI model...</span></span>
+            <span class="text-primary font-bold" id="model-file-percent">0%</span>
+          </div>
+          <div class="progress-bar-custom">
+            <div class="progress-fill" id="model-file-bar" style="width: 0%"></div>
+          </div>
+          <p class="text-xs text-base-content/50 mt-2" id="model-file-detail">Preparing...</p>
+        </div>
+
+        <!-- Main Animated Progress Bar -->
+        <div id="overall-progress" class="mb-5">
+          <div class="flex justify-between items-center text-sm mb-2">
+            <span class="font-medium flex items-center gap-2">
+              <i class="fas fa-circle-notch fa-spin text-primary hidden" id="progress-spinner"></i>
+              <i class="fas fa-tasks text-primary" id="progress-status-icon"></i>
+              <span id="overall-label">Waiting to start...</span>
+            </span>
+            <div class="flex items-center gap-3">
+              <span class="text-primary font-black text-xl" id="overall-percent">0%</span>
+              <span class="text-xs text-base-content/50 bg-base-200 px-2 py-1 rounded-md font-mono" id="timer-display">00:00</span>
+            </div>
+          </div>
+          <div class="progress-bar-custom" style="height: 16px;">
+            <div class="progress-fill" id="overall-bar" style="width: 0%"></div>
+          </div>
+          <div class="flex justify-between mt-1.5 px-0.5">
+            <span class="text-[10px] text-base-content/30">0%</span>
+            <span class="text-[10px] text-base-content/30">25%</span>
+            <span class="text-[10px] text-base-content/30">50%</span>
+            <span class="text-[10px] text-base-content/30">75%</span>
+            <span class="text-[10px] text-base-content/30">100%</span>
+          </div>
+        </div>
+
+        <!-- Current File Info -->
+        <div id="current-file-info" class="mb-4 hidden">
+          <div class="flex items-center gap-3 p-3 bg-base-200/50 rounded-xl border border-primary/20">
+            <div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-file-image text-primary"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-sm font-semibold truncate" id="current-image-name">image.png</p>
+              <p class="text-xs text-base-content/50" id="current-image-meta">1920 x 1080 | 2.4 MB</p>
+            </div>
+            <span class="text-sm font-black text-primary" id="current-image-percent">0%</span>
+          </div>
+          <progress class="progress progress-primary w-full mt-2" id="current-image-bar" value="0" max="100"></progress>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-3 gap-3 mb-5">
+          <div class="stat-card !p-3 !rounded-xl">
+            <div class="flex items-center justify-center gap-1 text-primary mb-1">
+              <i class="fas fa-layer-group text-sm"></i>
+              <span class="text-lg font-bold" id="queue-total">0</span>
+            </div>
+            <p class="text-[10px] sm:text-xs text-base-content/50">Total</p>
+          </div>
+          <div class="stat-card !p-3 !rounded-xl">
+            <div class="flex items-center justify-center gap-1 text-green-500 mb-1">
+              <i class="fas fa-check-circle text-sm"></i>
+              <span class="text-lg font-bold" id="queue-done">0</span>
+            </div>
+            <p class="text-[10px] sm:text-xs text-base-content/50">Done</p>
+          </div>
+          <div class="stat-card !p-3 !rounded-xl">
+            <div class="flex items-center justify-center gap-1 text-orange-500 mb-1">
+              <i class="fas fa-clock text-sm"></i>
+              <span class="text-lg font-bold" id="queue-est">--</span>
+            </div>
+            <p class="text-[10px] sm:text-xs text-base-content/50">Remaining</p>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="text-center" id="processing-actions">
+          <button id="cancel-processing-btn" class="btn btn-ghost btn-sm text-error gap-1">
+            <i class="fas fa-times-circle"></i>Cancel Processing
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PREVIEW SECTION ==================== -->
+  <section id="preview" class="py-12 lg:py-16 bg-base-100 hidden">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 max-w-7xl">
+      <div class="text-center mb-8">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
+          <i class="fas fa-eye"></i>
+          Preview
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-2">Preview bgremove Result</h2>
+        <p class="text-base-content/60">Compare before and after background removal. Use the slider to see the difference.</p>
+      </div>
+
+      <!-- Main Preview Area -->
+      <div class="grid lg:grid-cols-[1fr_280px] gap-6 mb-8">
+        <!-- Comparison View -->
+        <div class="glass-card rounded-2xl p-4">
+          <!-- View Tabs -->
+          <div class="flex items-center justify-between mb-4">
+            <div class="tabs tabs-boxed bg-base-200/50">
+              <button class="tab tab-active" data-view="slider" id="view-slider"><i class="fas fa-columns mr-2"></i>Slider</button>
+              <button class="tab" data-view="side" id="view-side"><i class="fas fa-th-large mr-2"></i>Side by Side</button>
+              <button class="tab" data-view="original" id="view-original"><i class="fas fa-image mr-2"></i>Original</button>
+              <button class="tab" data-view="result" id="view-result"><i class="fas fa-magic mr-2"></i>Result</button>
+            </div>
+            <div class="flex gap-1">
+              <button id="zoom-out-btn" class="btn btn-ghost btn-xs btn-circle" title="Zoom Out"><i class="fas fa-minus"></i></button>
+              <span id="zoom-level" class="text-xs font-mono w-12 text-center self-center">100%</span>
+              <button id="zoom-in-btn" class="btn btn-ghost btn-xs btn-circle" title="Zoom In"><i class="fas fa-plus"></i></button>
+              <button id="zoom-reset-btn" class="btn btn-ghost btn-xs btn-circle" title="Reset Zoom"><i class="fas fa-compress"></i></button>
+              <button id="fullscreen-btn" class="btn btn-ghost btn-xs btn-circle" title="Fullscreen"><i class="fas fa-expand"></i></button>
+            </div>
+          </div>
+
+          <!-- Slider View -->
+          <div id="preview-slider-view" class="comparison-container bg-[url('data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%239C92AC\' fill-opacity=\'0.1\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E')]">
+            <img id="preview-before-img" class="w-full h-auto block" alt="Original image" style="max-height: 70vh; object-fit: contain;">
+            <div class="comparison-after" id="comparison-after-container" style="width: 50%;">
+              <canvas id="preview-after-canvas" class="h-full block" style="max-height: 70vh;"></canvas>
+            </div>
+            <div class="comparison-slider-handle" id="comparison-slider" style="left: 50%;">
+              <i class="fas fa-arrows-alt-h"></i>
+            </div>
+          </div>
+
+          <!-- Side by Side View -->
+          <div id="preview-side-view" class="hidden grid grid-cols-2 gap-2">
+            <div class="rounded-xl overflow-hidden bg-base-200">
+              <p class="text-xs text-center py-2 bg-base-300 font-medium">Before</p>
+              <img id="preview-side-before" class="w-full" alt="Original" style="max-height: 60vh; object-fit: contain;">
+            </div>
+            <div class="rounded-xl overflow-hidden bg-base-200">
+              <p class="text-xs text-center py-2 bg-base-300 font-medium">After</p>
+              <canvas id="preview-side-after" class="w-full" style="max-height: 60vh;"></canvas>
+            </div>
+          </div>
+
+          <!-- Original Only View -->
+          <div id="preview-original-view" class="hidden text-center">
+            <img id="preview-original-only" class="max-w-full mx-auto rounded-xl" alt="Original" style="max-height: 70vh;">
+          </div>
+
+          <!-- Result Only View -->
+          <div id="preview-result-view" class="hidden text-center bg-[url('data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%239C92AC\' fill-opacity=\'0.1\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E')]">
+            <canvas id="preview-result-only" class="max-w-full mx-auto rounded-xl" style="max-height: 70vh;"></canvas>
+          </div>
+
+          <!-- Alpha Mask View -->
+          <div id="preview-mask-view" class="hidden text-center">
+            <canvas id="preview-mask-canvas" class="max-w-full mx-auto rounded-xl" style="max-height: 70vh;"></canvas>
+          </div>
+        </div>
+
+        <!-- Tools Sidebar -->
+        <div class="space-y-4">
+          <!-- Edge Refinement -->
+          <div class="tool-panel">
+            <h5 class="font-bold text-sm mb-3 flex items-center gap-2"><i class="fas fa-bezier-curve text-primary"></i>Edge Refinement</h5>
+            <div class="mb-2">
+              <div class="flex justify-between text-xs mb-1">
+                <span>Smooth</span><span id="edge-value">0</span><span>Sharp</span>
+              </div>
+              <input type="range" id="edge-slider" min="-50" max="50" value="0" class="w-full">
+            </div>
+          </div>
+
+          <!-- Feather -->
+          <div class="tool-panel">
+            <h5 class="font-bold text-sm mb-3 flex items-center gap-2"><i class="fas fa-feather-alt text-primary"></i>Feather Edges</h5>
+            <div class="mb-2">
+              <div class="flex justify-between text-xs mb-1">
+                <span>None</span><span id="feather-value">0</span><span>Max</span>
+              </div>
+              <input type="range" id="feather-slider" min="0" max="20" value="0" class="w-full">
+            </div>
+          </div>
+
+          <!-- Threshold -->
+          <div class="tool-panel">
+            <h5 class="font-bold text-sm mb-3 flex items-center gap-2"><i class="fas fa-adjust text-primary"></i>Threshold</h5>
+            <div class="mb-2">
+              <div class="flex justify-between text-xs mb-1">
+                <span>Soft</span><span id="threshold-value">128</span><span>Hard</span>
+              </div>
+              <input type="range" id="threshold-slider" min="0" max="255" value="128" class="w-full">
+            </div>
+          </div>
+
+          <!-- Auto Crop -->
+          <div class="tool-panel">
+            <div class="flex items-center justify-between mb-2">
+              <h5 class="font-bold text-sm flex items-center gap-2"><i class="fas fa-crop-alt text-primary"></i>Auto Crop</h5>
+              <div class="toggle-switch" id="auto-crop-toggle"></div>
+            </div>
+            <div class="mb-2" id="crop-padding-control" style="opacity: 0.3; pointer-events: none;">
+              <div class="flex justify-between text-xs mb-1">
+                <span>Padding</span><span id="crop-padding-value">10px</span>
+              </div>
+              <input type="range" id="crop-padding-slider" min="0" max="100" value="10" class="w-full">
+            </div>
+          </div>
+
+          <!-- Background Options -->
+          <div class="tool-panel">
+            <h5 class="font-bold text-sm mb-3 flex items-center gap-2"><i class="fas fa-palette text-primary"></i>Background</h5>
+            <div class="grid grid-cols-3 gap-2 mb-3">
+              <button class="tool-btn active" data-bg="transparent" title="Transparent">
+                <i class="fas fa-checkered"></i><span>None</span>
+              </button>
+              <button class="tool-btn" data-bg="blur" title="Blur">
+                <i class="fas fa-tint"></i><span>Blur</span>
+              </button>
+              <button class="tool-btn" data-bg="color" title="Color">
+                <i class="fas fa-fill-drip"></i><span>Color</span>
+              </button>
+              <button class="tool-btn" data-bg="gradient" title="Gradient">
+                <i class="fas fa-gradient"></i><span>Grad</span>
+              </button>
+              <button class="tool-btn" data-bg="image" title="Image">
+                <i class="fas fa-image"></i><span>Image</span>
+              </button>
+              <button class="tool-btn" data-bg="mask" title="Alpha Mask">
+                <i class="fas fa-adjust"></i><span>Mask</span>
+              </button>
+            </div>
+
+            <!-- Background Color Picker -->
+            <div id="bg-color-control" class="hidden mb-3">
+              <label class="text-xs font-medium mb-1 block">Background Color</label>
+              <div class="flex gap-2 flex-wrap">
+                <button class="w-8 h-8 rounded-lg border-2 border-transparent hover:border-primary transition-colors" style="background: #FFFFFF" data-color="#FFFFFF"></button>
+                <button class="w-8 h-8 rounded-lg border-2 border-transparent hover:border-primary transition-colors" style="background: #000000" data-color="#000000"></button>
+                <button class="w-8 h-8 rounded-lg border-2 border-transparent hover:border-primary transition-colors" style="background: #FFD600" data-color="#FFD600"></button>
+                <button class="w-8 h-8 rounded-lg border-2 border-transparent hover:border-primary transition-colors" style="background: #FF6B6B" data-color="#FF6B6B"></button>
+                <button class="w-8 h-8 rounded-lg border-2 border-transparent hover:border-primary transition-colors" style="background: #4ECDC4" data-color="#4ECDC4"></button>
+                <button class="w-8 h-8 rounded-lg border-2 border-transparent hover:border-primary transition-colors" style="background: #45B7D1" data-color="#45B7D1"></button>
+                <input type="color" id="bg-custom-color" value="#ffffff">
+              </div>
+            </div>
+
+            <!-- Background Gradient Control -->
+            <div id="bg-gradient-control" class="hidden mb-3">
+              <label class="text-xs font-medium mb-1 block">Gradient Colors</label>
+              <div class="flex gap-2 items-center">
+                <input type="color" id="bg-gradient-1" value="#FFD600" class="flex-1">
+                <i class="fas fa-arrow-right text-xs text-base-content/40"></i>
+                <input type="color" id="bg-gradient-2" value="#FFFFFF" class="flex-1">
+              </div>
+            </div>
+
+            <!-- Background Blur Control -->
+            <div id="bg-blur-control" class="hidden mb-3">
+              <label class="text-xs font-medium mb-1 block">Blur Amount</label>
+              <input type="range" id="bg-blur-slider" min="0" max="50" value="20" class="w-full">
+            </div>
+
+            <!-- Background Image Control -->
+            <div id="bg-image-control" class="hidden mb-3">
+              <label class="text-xs font-medium mb-1 block">Background Image</label>
+              <input type="file" id="bg-image-input" accept="image/*" class="file-input file-input-bordered file-input-sm w-full">
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col gap-2">
+            <button id="download-png-btn" class="btn btn-primary gap-2 w-full">
+              <i class="fas fa-download"></i>Download PNG
+            </button>
+            <button id="download-webp-btn" class="btn btn-outline gap-2 w-full">
+              <i class="fas fa-download"></i>Download WebP
+            </button>
+            <button id="download-zip-btn" class="btn btn-outline gap-2 w-full">
+              <i class="fas fa-file-archive"></i>Download All (ZIP)
+            </button>
+            <button id="restore-original-btn" class="btn btn-ghost btn-sm gap-2 w-full text-warning">
+              <i class="fas fa-undo"></i>Restore Original
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mini Image Strip -->
+      <div id="mini-strip-container" class="hidden">
+        <p class="text-sm font-medium mb-3">All Images</p>
+        <div class="flex gap-3 overflow-x-auto pb-2" id="mini-strip"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURES SECTION ==================== -->
+  <section id="features" class="py-16 sm:py-20 lg:py-24 bg-base-200 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-30">
+      <div class="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10">
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
+          <i class="fas fa-star"></i>
+          Features
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Why Choose bgremove?</h2>
+        <p class="text-base-content/60 text-lg max-w-2xl mx-auto">Professional-grade background removal with cutting-edge AI technology. bgremove works right in your browser — free, private, and instant.</p>
+      </div>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 max-w-4xl mx-auto">
+        <div class="stat-card">
+          <div class="text-3xl sm:text-4xl font-black text-primary mb-1" id="stat-images">0</div>
+          <div class="text-sm text-base-content/60">Images Processed</div>
+        </div>
+        <div class="stat-card">
+          <div class="text-3xl sm:text-4xl font-black text-primary mb-1">100%</div>
+          <div class="text-sm text-base-content/60">Free Forever</div>
+        </div>
+        <div class="stat-card">
+          <div class="text-3xl sm:text-4xl font-black text-primary mb-1">0s</div>
+          <div class="text-sm text-base-content/60">Upload Time</div>
+        </div>
+        <div class="stat-card">
+          <div class="text-3xl sm:text-4xl font-black text-primary mb-1">HD</div>
+          <div class="text-sm text-base-content/60">Output Quality</div>
+        </div>
+      </div>
+
+      <!-- Feature Cards -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3 class="font-bold text-lg mb-2">100% Private & Secure</h3>
+          <p class="text-sm text-base-content/60">bgremove processes everything locally in your browser. Your images never leave your device — complete privacy guaranteed.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+          <h3 class="font-bold text-lg mb-2">Lightning Fast bgremove</h3>
+          <p class="text-sm text-base-content/60">AI-powered background removal delivers transparent PNG results in seconds using GPU acceleration.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-gem"></i></div>
+          <h3 class="font-bold text-lg mb-2">HD Quality Output</h3>
+          <p class="text-sm text-base-content/60">bgremove preserves original resolution and image quality. Download high-quality transparent PNG files.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-cut"></i></div>
+          <h3 class="font-bold text-lg mb-2">Hair-Level Precision</h3>
+          <p class="text-sm text-base-content/60">Advanced AI preserves fine details like hair strands, fur edges, and complex outlines when removing backgrounds.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-palette"></i></div>
+          <h3 class="font-bold text-lg mb-2">Replace Backgrounds</h3>
+          <p class="text-sm text-base-content/60">After bgremove removes the background, replace it with blur, solid color, gradient, or upload your own.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-infinity"></i></div>
+          <h3 class="font-bold text-lg mb-2">Unlimited & Free Forever</h3>
+          <p class="text-sm text-base-content/60">No limits, no watermarks, no signup required. Use bgremove as much as you want — always free.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SETTINGS DRAWER ==================== -->
+  <div class="drawer drawer-end z-[60]">
+    <input id="settings-drawer" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content"></div>
+    <div class="drawer-side">
+      <label for="settings-drawer" class="drawer-overlay"></label>
+      <div class="menu p-6 w-80 sm:w-96 min-h-full glass-strong flex flex-col">
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="text-xl font-bold flex items-center gap-2"><i class="fas fa-cog text-primary"></i>Settings</h3>
+          <label for="settings-drawer" class="btn btn-ghost btn-circle btn-sm"><i class="fas fa-times"></i></label>
+        </div>
+
+        <div class="space-y-6 flex-1 overflow-y-auto">
+          <!-- Output Format -->
+          <div>
+            <label class="text-sm font-semibold mb-2 block">Output Format</label>
+            <select id="setting-output-format" class="select select-bordered w-full">
+              <option value="png">PNG (Transparent)</option>
+              <option value="webp">WebP (Smaller)</option>
+            </select>
+          </div>
+
+          <!-- Quality -->
+          <div>
+            <label class="text-sm font-semibold mb-2 block">Output Quality</label>
+            <div class="flex items-center gap-3">
+              <input type="range" id="setting-quality" min="0.5" max="1" step="0.05" value="0.95" class="flex-1">
+              <span class="text-sm font-mono w-12 text-right" id="setting-quality-value">95%</span>
+            </div>
+          </div>
+
+          <!-- Processing Mode -->
+          <div>
+            <label class="text-sm font-semibold mb-2 block">Processing Mode</label>
+            <div class="grid grid-cols-3 gap-2">
+              <button class="btn btn-outline btn-sm setting-mode active" data-mode="fast">Fast</button>
+              <button class="btn btn-outline btn-sm setting-mode" data-mode="balanced">Balanced</button>
+              <button class="btn btn-outline btn-sm setting-mode" data-mode="quality">Quality</button>
+            </div>
+          </div>
+
+          <!-- Model Quantization -->
+          <div>
+            <label class="text-sm font-semibold mb-2 block">Model Precision</label>
+            <div class="flex items-center justify-between">
+              <span class="text-sm">Use Quantized Model</span>
+              <div class="toggle-switch active" id="setting-quantized-toggle"></div>
+            </div>
+            <p class="text-xs text-base-content/50 mt-1">Quantized models load faster with slightly lower quality.</p>
+          </div>
+
+          <!-- Theme -->
+          <div>
+            <label class="text-sm font-semibold mb-2 block">Theme</label>
+            <div class="grid grid-cols-2 gap-2">
+              <button class="btn btn-outline btn-sm setting-theme active" data-theme="light"><i class="fas fa-sun mr-2"></i>Light</button>
+              <button class="btn btn-outline btn-sm setting-theme" data-theme="dark"><i class="fas fa-moon mr-2"></i>Dark</button>
+            </div>
+          </div>
+
+          <!-- Background Options -->
+          <div>
+            <label class="text-sm font-semibold mb-2 block">Default Background</label>
+            <select id="setting-default-bg" class="select select-bordered w-full">
+              <option value="transparent">Transparent</option>
+              <option value="blur">Blur</option>
+              <option value="color">Solid Color</option>
+              <option value="gradient">Gradient</option>
+            </select>
+          </div>
+
+          <!-- Performance -->
+          <div>
+            <label class="text-sm font-semibold mb-2 block">Performance</label>
+            <div class="flex items-center justify-between">
+              <span class="text-sm">Show FPS Counter</span>
+              <div class="toggle-switch" id="setting-fps-toggle"></div>
+            </div>
+          </div>
+
+          <!-- Keyboard Shortcuts -->
+          <div>
+            <label class="text-sm font-semibold mb-2 block">Keyboard Shortcuts</label>
+            <div class="text-xs space-y-1 text-base-content/60">
+              <div class="flex justify-between"><span>Ctrl + U</span><span>Upload</span></div>
+              <div class="flex justify-between"><span>Ctrl + S</span><span>Download</span></div>
+              <div class="flex justify-between"><span>Ctrl + V</span><span>Paste</span></div>
+              <div class="flex justify-between"><span>Ctrl + Z</span><span>Reset</span></div>
+              <div class="flex justify-between"><span>Esc</span><span>Close</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-6 pt-4 border-t border-base-300">
+          <button id="reset-settings-btn" class="btn btn-ghost btn-sm w-full gap-2">
+            <i class="fas fa-undo"></i>Reset to Defaults
+          </button>
+          <p class="text-xs text-center text-base-content/40 mt-3">Parrobyte v2.0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer footer-center p-8 sm:p-10 bg-neutral text-neutral-content">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex items-center justify-center gap-2 text-2xl font-bold mb-4">
+        <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
+          <i class="fas fa-crow text-black text-lg"></i>
+        </div>
+        <span>Parro<span class="text-primary">byte</span></span>
+      </div>
+      <p class="text-neutral-content/70 max-w-lg mx-auto mb-6">
+        Professional AI-powered background removal tool that runs entirely in your browser. 
+        Your privacy is our priority — no data ever leaves your device.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4 mb-6 text-sm">
+        <a href="#upload" class="link link-hover">Upload</a>
+        <a href="#preview" class="link link-hover">Preview</a>
+        <a href="#features" class="link link-hover">Features</a>
+        <label for="settings-drawer" class="link link-hover cursor-pointer">Settings</label>
+      </div>
+      <div class="divider before:bg-neutral-content/20 after:bg-neutral-content/20"></div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-neutral-content/50">
+        <p> Parrobyte. All rights reserved.</p>
+        <p class="flex items-center gap-1"><i class="fas fa-lock text-xs"></i>100% Client-Side Processing</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BOTTOM MOBILE ACTION BAR ==================== -->
+  <div class="mobile-action-bar md:hidden no-print" id="mobile-bar">
+    <a href="#upload" class="flex flex-col items-center gap-1 text-xs text-base-content/60 hover:text-primary transition-colors">
+      <div class="w-10 h-10 rounded-xl bg-base-200 flex items-center justify-center"><i class="fas fa-cloud-upload-alt"></i></div>
+      <span>Upload</span>
+    </a>
+    <button id="mobile-process-btn" class="flex flex-col items-center gap-1 text-xs text-base-content/60 hover:text-primary transition-colors opacity-50" disabled>
+      <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-lg -mt-4"><i class="fas fa-crow text-black text-lg"></i></div>
+      <span>Process</span>
+    </button>
+    <a href="#preview" class="flex flex-col items-center gap-1 text-xs text-base-content/60 hover:text-primary transition-colors">
+      <div class="w-10 h-10 rounded-xl bg-base-200 flex items-center justify-center"><i class="fas fa-eye"></i></div>
+      <span>Preview</span>
+    </a>
+  </div>
+
+  <!-- ==================== SCROLL TO TOP ==================== -->
+  <button id="scroll-to-top" class="scroll-to-top no-print" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ==================== CONFETTI CANVAS ==================== -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- ==================== TOAST CONTAINER ==================== -->
+  <div id="toast-container" class="fixed top-4 right-4 z-[100] space-y-2 max-w-sm"></div>
+
+  <!-- ==================== WELCOME MODAL ==================== -->
+  <dialog id="welcome-modal" class="modal">
+    <div class="modal-box max-w-lg">
+      <div class="text-center">
+        <div class="w-20 h-20 mx-auto mb-4 rounded-2xl bg-primary/20 flex items-center justify-center">
+          <i class="fas fa-crow text-4xl text-primary"></i>
+        </div>
+        <h3 class="text-2xl font-bold mb-2">Welcome to Parrobyte</h3>
+        <p class="text-base-content/60 mb-6">
+          Remove backgrounds from images with AI — completely free, private, and running in your browser.
+        </p>
+        <div class="space-y-3 text-left bg-base-200/50 rounded-xl p-4 mb-6">
+          <div class="flex items-start gap-3">
+            <i class="fas fa-shield-alt text-primary mt-1"></i>
+            <div>
+              <p class="font-medium text-sm">Privacy First</p>
+              <p class="text-xs text-base-content/60">Your images never leave your device. All processing is local.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="fas fa-download text-primary mt-1"></i>
+            <div>
+              <p class="font-medium text-sm">AI Model Download</p>
+              <p class="text-xs text-base-content/60">On first use, the AI model (~40MB) will download automatically.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="fas fa-infinity text-primary mt-1"></i>
+            <div>
+              <p class="font-medium text-sm">Unlimited Use</p>
+              <p class="text-xs text-base-content/60">No limits, no watermarks, no signup. Use it as much as you want.</p>
+            </div>
+          </div>
+        </div>
+        <button id="welcome-modal-close" class="btn btn-primary btn-lg w-full gap-2">
+          <i class="fas fa-rocket"></i>Get Started
+        </button>
+        <label class="flex items-center justify-center gap-2 mt-4 cursor-pointer">
+          <input type="checkbox" id="dont-show-welcome" class="checkbox checkbox-sm checkbox-primary">
+          <span class="text-sm text-base-content/60">Don't show again</span>
+        </label>
+      </div>
+    </div>
+  </dialog>
+
+
+  <!-- ==================== MAIN JAVASCRIPT ==================== -->
+  <script type="module">
+    // ============================================
+    // AI BACKGROUND REMOVER PRO - Main Application
+    // ============================================
+
+    import { AutoModel, AutoProcessor, RawImage, env } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2';
+
+    // --- Configure Transformers.js environment ---
+    try {
+      env.allowLocalModels = false;
+      env.allowRemoteModels = true;
+      env.useBrowserCache = true;
+      if (env?.backends?.onnx?.wasm) {
+        env.backends.onnx.wasm.numThreads = Math.min(navigator.hardwareConcurrency || 2, 4);
+        env.backends.onnx.wasm.simd = true;
+      }
+    } catch (e) {
+      console.warn('Transformers env config warning:', e);
+    }
+
+    // Detect file:// protocol and warn
+    const isFileProtocol = window.location.protocol === 'file:';
+
+    // ==================== CONFIGURATION ====================
+    const CONFIG = {
+      MODEL_ID: 'Xenova/modnet',
+      MAX_IMAGE_SIZE: 2048,
+      SUPPORTED_MIMETYPES: ['image/jpeg', 'image/png', 'image/webp', 'image/bmp', 'image/tiff', 'image/avif', 'image/heic', 'image/heif'],
+      SUPPORTED_EXTENSIONS: ['.jpg', '.jpeg', '.png', '.webp', '.bmp', '.tiff', '.tif', '.avif', '.heic', '.heif'],
+      CHUNK_SIZE: 1024 * 1024,
+    };
+
+    // ==================== STATE ====================
+    const state = {
+      model: null,
+      processor: null,
+      isModelLoaded: false,
+      isModelLoading: false,
+      images: [],
+      currentImageIndex: -1,
+      isProcessing: false,
+      cancelProcessing: false,
+      processingQueue: [],
+      settings: {
+        outputFormat: 'png',
+        quality: 0.95,
+        processingMode: 'balanced',
+        quantized: true,
+        edgeRefinement: 0,
+        feather: 0,
+        threshold: 128,
+        autoCrop: false,
+        cropPadding: 10,
+        backgroundType: 'transparent',
+        backgroundColor: '#FFFFFF',
+        backgroundGradient: ['#FFD600', '#FFFFFF'],
+        backgroundBlur: 20,
+        theme: 'light',
+        showFps: false,
+      },
+      ui: {
+        zoomScale: 1,
+        panX: 0,
+        panY: 0,
+        isDragging: false,
+        lastMouseX: 0,
+        lastMouseY: 0,
+        sliderPosition: 50,
+        isSliderDragging: false,
+        currentView: 'slider',
+      },
+      sessionStats: {
+        imagesProcessed: parseInt(localStorage.getItem('brp_imagesProcessed') || '0'),
+      }
+    };
+
+    // ==================== DOM CACHE ====================
+    const DOM = {};
+
+    function cacheDOM() {
+      const ids = [
+        'navbar', 'theme-toggle', 'theme-icon', 'particle-canvas', 'hero-demo-container',
+        'hero-demo-placeholder', 'hero-demo-canvas', 'upload-zone', 'file-input',
+        'camera-input', 'upload-prompt', 'upload-loading', 'upload-loading-text',
+        'upload-compact', 'upload-success-count', 'upload-flash',
+        'upload-status-banner', 'banner-file-count',
+        'browse-btn', 'camera-btn', 'paste-btn', 'add-more-btn', 'metadata-panel', 'metadata-grid', 'image-grid-container',
+        'image-grid', 'image-count', 'clear-all-btn', 'process-btn', 'process-section',
+        'model-status-text', 'processing', 'processing-icon', 'processing-title',
+        'processing-desc', 'model-download-progress', 'model-file-name',
+        'model-file-percent', 'model-file-bar', 'model-file-detail',
+        'overall-progress', 'overall-percent', 'overall-bar',
+        'current-file-info', 'current-image-name', 'current-image-percent',
+        'current-image-bar', 'queue-total', 'queue-done', 'queue-est',
+        'cancel-processing-btn', 'preview', 'preview-slider-view',
+        'preview-before-img', 'comparison-after-container', 'preview-after-canvas',
+        'comparison-slider', 'preview-side-view', 'preview-side-before',
+        'preview-side-after', 'preview-original-view', 'preview-original-only',
+        'preview-result-view', 'preview-result-only', 'preview-mask-view',
+        'preview-mask-canvas', 'view-slider', 'view-side', 'view-original',
+        'view-result', 'zoom-out-btn', 'zoom-in-btn', 'zoom-level',
+        'zoom-reset-btn', 'fullscreen-btn', 'edge-slider', 'edge-value',
+        'feather-slider', 'feather-value', 'threshold-slider', 'threshold-value',
+        'auto-crop-toggle', 'crop-padding-control', 'crop-padding-slider',
+        'crop-padding-value', 'bg-color-control', 'bg-gradient-control',
+        'bg-blur-control', 'bg-image-control', 'bg-custom-color',
+        'bg-gradient-1', 'bg-gradient-2', 'bg-blur-slider', 'bg-image-input',
+        'download-png-btn', 'download-webp-btn', 'download-zip-btn',
+        'restore-original-btn', 'mini-strip-container', 'mini-strip',
+        'settings-drawer', 'setting-output-format', 'setting-quality',
+        'setting-quality-value', 'setting-quantized-toggle', 'setting-fps-toggle',
+        'setting-default-bg', 'reset-settings-btn', 'mobile-bar', 'mobile-process-btn',
+        'scroll-to-top', 'confetti-canvas', 'toast-container',
+        'welcome-modal', 'welcome-modal-close', 'dont-show-welcome',
+        'try-sample-btn', 'features',
+        // Stepper elements
+        'stepper-line',
+        'step-circle-1', 'step-icon-1', 'step-label-1', 'step-desc-1',
+        'step-circle-2', 'step-icon-2', 'step-label-2', 'step-desc-2',
+        'step-circle-3', 'step-icon-3', 'step-label-3', 'step-desc-3',
+        'timer-display', 'overall-label', 'progress-status-icon',
+        'current-file-info', 'current-image-meta', 'processing-actions',
+        // New status elements
+        'status-spinner-wrapper', 'status-main-icon', 'status-processing-ring',
+        'live-status-pill', 'live-status-text', 'progress-spinner',
+        'step-list',
+        'sl-item-1', 'sl-num-1', 'sl-text-1',
+        'sl-item-2', 'sl-num-2', 'sl-text-2',
+        'sl-item-3', 'sl-num-3', 'sl-text-3',
+        'sl-item-4', 'sl-num-4', 'sl-text-4',
+        'sl-item-5', 'sl-num-5', 'sl-text-5',
+      ];
+      ids.forEach(id => {
+        DOM[id] = document.getElementById(id);
+      });
+    }
+
+    // ==================== UTILITY FUNCTIONS ====================
+    const Utils = {
+      formatBytes(bytes) {
+        if (bytes === 0) return '0 B';
+        const k = 1024;
+        const sizes = ['B', 'KB', 'MB', 'GB'];
+        const i = Math.floor(Math.log(bytes) / Math.log(k));
+        return parseFloat((bytes / Math.pow(k, i)).toFixed(1)) + ' ' + sizes[i];
+      },
+
+      formatDimensions(w, h) {
+        return `${w} x ${h} px`;
+      },
+
+      getFileExtension(filename) {
+        return '.' + filename.split('.').pop().toLowerCase();
+      },
+
+      isSupportedFile(file) {
+        if (CONFIG.SUPPORTED_MIMETYPES.includes(file.type)) return true;
+        const ext = this.getFileExtension(file.name);
+        return CONFIG.SUPPORTED_EXTENSIONS.includes(ext);
+      },
+
+      generateId() {
+        return 'img_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+      },
+
+      debounce(fn, ms) {
+        let timer;
+        return (...args) => {
+          clearTimeout(timer);
+          timer = setTimeout(() => fn(...args), ms);
+        };
+      },
+
+      clamp(val, min, max) {
+        return Math.min(Math.max(val, min), max);
+      },
+
+      dataURLToBlob(dataURL) {
+        const arr = dataURL.split(',');
+        const mime = arr[0].match(/:(.*?);/)[1];
+        const bstr = atob(arr[1]);
+        const u8arr = new Uint8Array(bstr.length);
+        for (let i = 0; i < bstr.length; i++) {
+          u8arr[i] = bstr.charCodeAt(i);
+        }
+        return new Blob([u8arr], { type: mime });
+      },
+
+      async blobToDataURL(blob) {
+        return new Promise(resolve => {
+          const reader = new FileReader();
+          reader.onloadend = () => resolve(reader.result);
+          reader.readAsDataURL(blob);
+        });
+      },
+
+      async loadImage(src) {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.crossOrigin = 'anonymous';
+          img.onload = () => resolve(img);
+          img.onerror = reject;
+          img.src = src;
+        });
+      },
+
+      createCanvas(width, height) {
+        const canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+        return canvas;
+      },
+
+      canvasToBlob(canvas, type = 'image/png', quality = 0.95) {
+        return new Promise(resolve => {
+          canvas.toBlob(blob => resolve(blob), type, quality);
+        });
+      },
+
+      resizeToMax(img, maxSize) {
+        let { width, height } = img;
+        if (width > maxSize || height > maxSize) {
+          const ratio = Math.min(maxSize / width, maxSize / height);
+          width = Math.round(width * ratio);
+          height = Math.round(height * ratio);
+        }
+        const canvas = this.createCanvas(width, height);
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, width, height);
+        return canvas;
+      },
+
+      getAlphaBounds(data, width, height) {
+        let minX = width, minY = height, maxX = 0, maxY = 0;
+        for (let y = 0; y < height; y++) {
+          for (let x = 0; x < width; x++) {
+            const idx = (y * width + x) * 4 + 3;
+            if (data[idx] > 10) {
+              minX = Math.min(minX, x);
+              minY = Math.min(minY, y);
+              maxX = Math.max(maxX, x);
+              maxY = Math.max(maxY, y);
+            }
+          }
+        }
+        return minX < maxX ? { x: minX, y: minY, w: maxX - minX + 1, h: maxY - minY + 1 } : null;
+      },
+
+      async delay(ms) {
+        return new Promise(r => setTimeout(r, ms));
+      },
+    };
+
+    // ==================== TOAST NOTIFICATIONS ====================
+    const Toast = {
+      container: null,
+
+      init() {
+        this.container = DOM['toast-container'];
+      },
+
+      show(message, type = 'info', duration = 3000) {
+        if (!this.container) return;
+        const icons = {
+          info: 'fa-info-circle text-info',
+          success: 'fa-check-circle text-success',
+          warning: 'fa-exclamation-triangle text-warning',
+          error: 'fa-times-circle text-error',
+        };
+        const alertClass = {
+          info: 'alert-info',
+          success: 'alert-success',
+          warning: 'alert-warning',
+          error: 'alert-error',
+        };
+
+        const toast = document.createElement('div');
+        toast.className = `toast-item alert ${alertClass[type]} shadow-lg glass-strong`;
+        toast.innerHTML = `<i class="fas ${icons[type]}"></i><span class="text-sm">${message}</span>`;
+        this.container.appendChild(toast);
+
+        if (duration > 0) {
+          setTimeout(() => {
+            toast.classList.add('hide');
+            setTimeout(() => toast.remove(), 300);
+          }, duration);
+        }
+        return toast;
+      },
+
+      remove(toast) {
+        if (toast) {
+          toast.classList.add('hide');
+          setTimeout(() => toast.remove(), 300);
+        }
+      }
+    };
+
+    // ==================== PARTICLE SYSTEM ====================
+    class ParticleSystem {
+      constructor(canvas) {
+        this.canvas = canvas;
+        this.ctx = canvas.getContext('2d');
+        this.particles = [];
+        this.resize();
+        this.init();
+        this.animate();
+        window.addEventListener('resize', () => this.resize());
+      }
+
+      resize() {
+        const parent = this.canvas.parentElement;
+        if (parent) {
+          this.canvas.width = parent.offsetWidth;
+          this.canvas.height = parent.offsetHeight;
+        }
+      }
+
+      init() {
+        this.particles = [];
+        const count = Math.min(60, Math.floor((this.canvas.width * this.canvas.height) / 15000));
+        for (let i = 0; i < count; i++) {
+          this.particles.push({
+            x: Math.random() * this.canvas.width,
+            y: Math.random() * this.canvas.height,
+            size: Math.random() * 3 + 1,
+            speedY: -(Math.random() * 0.8 + 0.2),
+            speedX: (Math.random() - 0.5) * 0.4,
+            opacity: Math.random() * 0.5 + 0.15,
+            color: Math.random() > 0.3 ? '255, 214, 0' : '255, 255, 255',
+          });
+        }
+      }
+
+      animate() {
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        this.particles.forEach(p => {
+          p.y += p.speedY;
+          p.x += p.speedX;
+          if (p.y < -10) {
+            p.y = this.canvas.height + 10;
+            p.x = Math.random() * this.canvas.width;
+          }
+          if (p.x < -10) p.x = this.canvas.width + 10;
+          if (p.x > this.canvas.width + 10) p.x = -10;
+
+          this.ctx.beginPath();
+          this.ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+          this.ctx.fillStyle = `rgba(${p.color}, ${p.opacity})`;
+          this.ctx.fill();
+        });
+        requestAnimationFrame(() => this.animate());
+      }
+    }
+
+    // ==================== CONFETTI SYSTEM ====================
+    class ConfettiSystem {
+      constructor(canvas) {
+        this.canvas = canvas;
+        this.ctx = canvas.getContext('2d');
+        this.particles = [];
+        this.active = false;
+      }
+
+      launch() {
+        this.canvas.width = window.innerWidth;
+        this.canvas.height = window.innerHeight;
+        this.particles = [];
+        const colors = ['#FFD600', '#FFFFFF', '#000000', '#FFE44D', '#333333'];
+        for (let i = 0; i < 120; i++) {
+          this.particles.push({
+            x: this.canvas.width / 2 + (Math.random() - 0.5) * 200,
+            y: this.canvas.height / 2,
+            vx: (Math.random() - 0.5) * 25,
+            vy: (Math.random() - 0.5) * 25 - 8,
+            color: colors[Math.floor(Math.random() * colors.length)],
+            size: Math.random() * 8 + 4,
+            rotation: Math.random() * 360,
+            rotationSpeed: (Math.random() - 0.5) * 15,
+            gravity: 0.4,
+            drag: 0.98,
+          });
+        }
+        this.active = true;
+        this.animate();
+      }
+
+      animate() {
+        if (!this.active) return;
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        let alive = false;
+        this.particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += p.gravity;
+          p.vx *= p.drag;
+          p.rotation += p.rotationSpeed;
+          if (p.y < this.canvas.height + 50) alive = true;
+
+          this.ctx.save();
+          this.ctx.translate(p.x, p.y);
+          this.ctx.rotate(p.rotation * Math.PI / 180);
+          this.ctx.fillStyle = p.color;
+          this.ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+          this.ctx.restore();
+        });
+        if (alive) {
+          requestAnimationFrame(() => this.animate());
+        } else {
+          this.active = false;
+          this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        }
+      }
+    }
+
+    // ==================== THEME MANAGER ====================
+    const Theme = {
+      init() {
+        const saved = localStorage.getItem('brp_theme');
+        if (saved) {
+          state.settings.theme = saved;
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          state.settings.theme = 'dark';
+        }
+        this.apply();
+      },
+
+      apply() {
+        document.documentElement.setAttribute('data-theme', state.settings.theme);
+        const icon = DOM['theme-icon'];
+        if (icon) {
+          icon.className = state.settings.theme === 'dark' ? 'fas fa-moon text-lg' : 'fas fa-sun text-lg';
+        }
+        document.querySelectorAll('.setting-theme').forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.theme === state.settings.theme);
+          btn.classList.toggle('btn-primary', btn.dataset.theme === state.settings.theme);
+          btn.classList.toggle('btn-outline', btn.dataset.theme !== state.settings.theme);
+        });
+      },
+
+      toggle() {
+        state.settings.theme = state.settings.theme === 'light' ? 'dark' : 'light';
+        localStorage.setItem('brp_theme', state.settings.theme);
+        this.apply();
+      },
+
+      set(theme) {
+        state.settings.theme = theme;
+        localStorage.setItem('brp_theme', theme);
+        this.apply();
+      }
+    };
+
+    // ==================== UPLOAD MODULE ====================
+    const Upload = {
+      init() {
+        const zone = DOM['upload-zone'];
+        const fileInput = DOM['file-input'];
+        const cameraInput = DOM['camera-input'];
+
+        zone.addEventListener('click', (e) => {
+          if (e.target.closest('button') || e.target.closest('input')) return;
+          fileInput.click();
+        });
+        zone.addEventListener('dragover', (e) => {
+          e.preventDefault();
+          zone.classList.add('drag-active');
+        });
+        zone.addEventListener('dragleave', () => zone.classList.remove('drag-active'));
+        zone.addEventListener('drop', (e) => {
+          e.preventDefault();
+          zone.classList.remove('drag-active');
+          this.handleFiles(e.dataTransfer.files);
+        });
+
+        fileInput.addEventListener('change', (e) => this.handleFiles(e.target.files));
+        cameraInput.addEventListener('change', (e) => this.handleFiles(e.target.files));
+
+        const addMore = DOM['add-more-btn'];
+        const browse = DOM['browse-btn'];
+        const camera = DOM['camera-btn'];
+        const paste = DOM['paste-btn'];
+        const clearAll = DOM['clear-all-btn'];
+
+        if (browse) browse.addEventListener('click', (e) => {
+          e.stopPropagation();
+          fileInput.click();
+        });
+        if (addMore) addMore.addEventListener('click', (e) => {
+          e.stopPropagation();
+          fileInput.click();
+        });
+        if (camera) camera.addEventListener('click', (e) => {
+          e.stopPropagation();
+          cameraInput.click();
+        });
+        if (paste) paste.addEventListener('click', (e) => {
+          e.stopPropagation();
+          this.pasteFromClipboard();
+        });
+        if (clearAll) clearAll.addEventListener('click', () => this.clearAll());
+
+        document.addEventListener('paste', (e) => {
+          if (e.clipboardData && e.clipboardData.files.length > 0) {
+            this.handleFiles(e.clipboardData.files);
+          }
+        });
+      },
+
+      async pasteFromClipboard() {
+        try {
+          const items = await navigator.clipboard.read();
+          for (const item of items) {
+            for (const type of item.types) {
+              if (type.startsWith('image/')) {
+                const blob = await item.getType(type);
+                this.handleFiles([new File([blob], 'pasted-image.png', { type })]);
+                return;
+              }
+            }
+          }
+          Toast.show('No image found in clipboard', 'warning');
+        } catch {
+          Toast.show('Clipboard access denied. Use Ctrl+V instead.', 'warning');
+        }
+      },
+
+      async handleFiles(fileList) {
+        const files = Array.from(fileList).filter(file => {
+          if (!Utils.isSupportedFile(file)) {
+            Toast.show(`Unsupported format: ${file.name}`, 'warning');
+            return false;
+          }
+          return true;
+        });
+
+        if (files.length === 0) return;
+
+        // Show loading state
+        const prompt = DOM['upload-prompt'];
+        const compact = DOM['upload-compact'];
+        const loading = DOM['upload-loading'];
+        const loadingText = DOM['upload-loading-text'];
+
+        if (prompt) prompt.classList.add('hidden');
+        if (compact) compact.classList.add('hidden');
+        if (loading) loading.classList.remove('hidden');
+
+        // Load each file with progress
+        let loaded = 0;
+        for (const file of files) {
+          if (loadingText) loadingText.textContent = `Reading file ${loaded + 1} of ${files.length}: ${file.name}...`;
+          try {
+            await this.addImage(file);
+            loaded++;
+          } catch (err) {
+            console.error('Failed to load image:', file.name, err);
+            Toast.show(`Failed to load: ${file.name}`, 'error');
+          }
+        }
+
+        // Hide loading
+        if (loading) loading.classList.add('hidden');
+
+        // Update UI with new images
+        this.updateUI();
+
+        // Show success flash
+        const flash = DOM['upload-flash'];
+        if (flash) {
+          flash.classList.add('upload-flash-active');
+          setTimeout(() => flash.classList.remove('upload-flash-active'), 800);
+        }
+
+        // Show compact state + banner
+        if (prompt) prompt.classList.add('hidden');
+        if (compact) compact.classList.remove('hidden');
+
+        // Update counts
+        const succCount = DOM['upload-success-count'];
+        if (succCount) succCount.textContent = state.images.length;
+        const bannerCount = DOM['banner-file-count'];
+        if (bannerCount) bannerCount.textContent = loaded;
+        const banner = DOM['upload-status-banner'];
+        if (banner && loaded > 0) banner.classList.remove('hidden');
+
+        // Add compact style to zone
+        const zone = DOM['upload-zone'];
+        if (zone) zone.classList.add('has-files');
+
+        // Show toast
+        Toast.show(`${loaded} image(s) uploaded successfully!`, 'success');
+
+        // Scroll to show the grid
+        await Utils.delay(300);
+        const gridContainer = DOM['image-grid-container'];
+        if (gridContainer) {
+          gridContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      },
+
+      async addImage(file) {
+        const id = Utils.generateId();
+        const url = URL.createObjectURL(file);
+        const img = await Utils.loadImage(url);
+
+        const imageData = {
+          id,
+          file,
+          originalUrl: url,
+          processedUrl: null,
+          originalCanvas: null,
+          processedCanvas: null,
+          maskData: null,
+          thumbnail: null,
+          metadata: {
+            name: file.name,
+            size: file.size,
+            width: img.naturalWidth,
+            height: img.naturalHeight,
+            format: file.type || Utils.getFileExtension(file.name).slice(1).toUpperCase(),
+          },
+          status: 'pending',
+          error: null,
+        };
+
+        const thumbCanvas = Utils.createCanvas(200, 200);
+        const tctx = thumbCanvas.getContext('2d');
+        const ratio = Math.min(200 / img.naturalWidth, 200 / img.naturalHeight);
+        const tw = Math.round(img.naturalWidth * ratio);
+        const th = Math.round(img.naturalHeight * ratio);
+        tctx.drawImage(img, (200 - tw) / 2, (200 - th) / 2, tw, th);
+        imageData.thumbnail = thumbCanvas.toDataURL('image/jpeg', 0.8);
+
+        const fullCanvas = Utils.createCanvas(img.naturalWidth, img.naturalHeight);
+        fullCanvas.getContext('2d').drawImage(img, 0, 0);
+        imageData.originalCanvas = fullCanvas;
+
+        state.images.push(imageData);
+        if (state.currentImageIndex === -1) {
+          state.currentImageIndex = 0;
+          this.showMetadata(imageData);
+        }
+      },
+
+      showMetadata(img) {
+        const panel = DOM['metadata-panel'];
+        const grid = DOM['metadata-grid'];
+        panel.classList.remove('hidden');
+        grid.innerHTML = `
+          <div class="bg-base-200/50 rounded-lg p-3"><p class="text-xs text-base-content/50">Name</p><p class="font-medium text-sm truncate">${img.metadata.name}</p></div>
+          <div class="bg-base-200/50 rounded-lg p-3"><p class="text-xs text-base-content/50">Size</p><p class="font-medium text-sm">${Utils.formatBytes(img.metadata.size)}</p></div>
+          <div class="bg-base-200/50 rounded-lg p-3"><p class="text-xs text-base-content/50">Dimensions</p><p class="font-medium text-sm">${Utils.formatDimensions(img.metadata.width, img.metadata.height)}</p></div>
+          <div class="bg-base-200/50 rounded-lg p-3"><p class="text-xs text-base-content/50">Format</p><p class="font-medium text-sm">${img.metadata.format.toUpperCase()}</p></div>
+        `;
+      },
+
+      updateUI() {
+        const hasImages = state.images.length > 0;
+        DOM['image-grid-container'].classList.toggle('hidden', !hasImages);
+        DOM['process-btn'].classList.toggle('hidden', !hasImages);
+        DOM['image-count'].textContent = state.images.length;
+
+        const grid = DOM['image-grid'];
+        grid.innerHTML = state.images.map((img, i) => `
+          <div class="image-grid-item ${i === state.currentImageIndex ? 'ring-2 ring-primary' : ''}" data-index="${i}" style="animation-delay: ${i * 0.08}s">
+            <img src="${img.thumbnail}" class="w-full aspect-square object-cover" alt="${img.metadata.name}" loading="lazy">
+            <span class="status-badge badge badge-sm ${img.status === 'done' ? 'badge-success' : img.status === 'processing' ? 'badge-primary' : img.status === 'error' ? 'badge-error' : 'badge-ghost'}">${img.status}</span>
+            <button class="remove-btn btn btn-circle btn-xs btn-error" data-index="${i}"><i class="fas fa-times"></i></button>
+            ${img.status === 'pending' ? '<div class="absolute bottom-0 left-0 right-0 bg-primary/90 text-black text-[10px] font-bold py-1 text-center">PENDING</div>' : ''}
+            ${img.status === 'done' ? '<div class="absolute bottom-0 left-0 right-0 bg-green-500/90 text-white text-[10px] font-bold py-1 text-center">DONE</div>' : ''}
+          </div>
+        `).join('');
+
+        grid.querySelectorAll('.image-grid-item').forEach(item => {
+          item.addEventListener('click', () => {
+            state.currentImageIndex = parseInt(item.dataset.index);
+            this.showMetadata(state.images[state.currentImageIndex]);
+            this.updateUI();
+            if (state.images[state.currentImageIndex].processedCanvas) {
+              Preview.show(state.currentImageIndex);
+            }
+          });
+        });
+
+        grid.querySelectorAll('.remove-btn').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const idx = parseInt(btn.dataset.index);
+            URL.revokeObjectURL(state.images[idx].originalUrl);
+            if (state.images[idx].processedUrl) URL.revokeObjectURL(state.images[idx].processedUrl);
+            state.images.splice(idx, 1);
+            if (state.currentImageIndex >= state.images.length) {
+              state.currentImageIndex = state.images.length - 1;
+            }
+            if (state.images.length > 0) {
+              this.showMetadata(state.images[state.currentImageIndex]);
+            } else {
+              DOM['metadata-panel'].classList.add('hidden');
+            }
+            this.updateUI();
+          });
+        });
+
+        const mobileProcessBtn = DOM['mobile-process-btn'];
+        if (mobileProcessBtn) {
+          mobileProcessBtn.disabled = !hasImages || state.isProcessing;
+          mobileProcessBtn.style.opacity = hasImages && !state.isProcessing ? '1' : '0.5';
+        }
+      },
+
+      clearAll() {
+        state.images.forEach(img => {
+          URL.revokeObjectURL(img.originalUrl);
+          if (img.processedUrl) URL.revokeObjectURL(img.processedUrl);
+        });
+        state.images = [];
+        state.currentImageIndex = -1;
+
+        // Reset upload zone
+        const prompt = DOM['upload-prompt'];
+        const compact = DOM['upload-compact'];
+        const zone = DOM['upload-zone'];
+        const banner = DOM['upload-status-banner'];
+
+        if (prompt) prompt.classList.remove('hidden');
+        if (compact) compact.classList.add('hidden');
+        if (zone) zone.classList.remove('has-files');
+        if (banner) banner.classList.add('hidden');
+        DOM['metadata-panel'].classList.add('hidden');
+
+        this.updateUI();
+        Preview.hide();
+        Toast.show('All images cleared', 'info');
+      },
+    };
+
+    // ==================== AI MODULE ====================
+    const AI = {
+      async load() {
+        if (state.isModelLoaded) return;
+        if (state.isModelLoading) return;
+        state.isModelLoading = true;
+
+        const proc = DOM['processing'];
+        const mdp = DOM['model-download-progress'];
+        const pt = DOM['processing-title'];
+        const pd = DOM['processing-desc'];
+        const mst = DOM['model-status-text'];
+
+        if (proc) proc.classList.remove('hidden');
+        if (mdp) mdp.classList.remove('hidden');
+        if (pt) pt.textContent = 'Loading AI Model';
+        if (pd) pd.textContent = 'Downloading model files... This happens only once.';
+        if (mst) mst.textContent = 'Downloading AI model...';
+
+        const progressCallback = (progress) => {
+          const mfn = DOM['model-file-name'];
+          const mfp = DOM['model-file-percent'];
+          const mfb = DOM['model-file-bar'];
+          const mfd = DOM['model-file-detail'];
+          if (progress.status === 'progress') {
+            const pct = Math.round(progress.progress * 100);
+            if (mfn) mfn.textContent = progress.file || 'Downloading...';
+            if (mfp) mfp.textContent = pct + '%';
+            if (mfb) mfb.style.width = pct + '%';
+            if (progress.loaded && progress.total && mfd) {
+              mfd.textContent = `${Utils.formatBytes(progress.loaded)} / ${Utils.formatBytes(progress.total)}`;
+            }
+          } else if (progress.status === 'done') {
+            if (mfd) mfd.textContent = `Loaded: ${progress.file}`;
+          }
+        };
+
+        try {
+          const loadOptions = {
+            progress_callback: progressCallback,
+            quantized: state.settings.quantized,
+          };
+
+          state.model = await AutoModel.from_pretrained(CONFIG.MODEL_ID, loadOptions);
+          state.processor = await AutoProcessor.from_pretrained(CONFIG.MODEL_ID, {
+            progress_callback: progressCallback,
+          });
+
+          state.isModelLoaded = true;
+          state.isModelLoading = false;
+          if (mdp) mdp.classList.add('hidden');
+          if (pt) pt.textContent = 'AI Model Ready';
+          if (pd) pd.textContent = 'The AI model is loaded and ready to process images.';
+          if (mst) mst.textContent = 'AI model ready';
+          Toast.show('AI model loaded successfully', 'success');
+
+          await Utils.delay(1500);
+          if (!state.isProcessing && proc) {
+            proc.classList.add('hidden');
+          }
+        } catch (err) {
+          console.error('Model load error:', err);
+          state.isModelLoading = false;
+          state.isModelLoaded = false;
+          const isAuthError = err.message && (err.message.includes('401') || err.message.includes('Unauthorized'));
+          const isCorsError = err.message && (err.message.includes('CORS') || err.message.includes('Failed to fetch'));
+          if (pt) pt.textContent = 'Model Load Failed';
+          if (isAuthError && isFileProtocol) {
+            if (pd) pd.textContent = 'Browser blocked model download (file:// protocol). Run a local server: npx serve .';
+            if (mst) mst.textContent = 'Blocked by browser security';
+            Toast.show('Use local server: npx serve .  or  python3 -m http.server 8080', 'error', 10000);
+          } else if (isCorsError) {
+            if (pd) pd.textContent = 'CORS blocked. Try refreshing or use a local HTTP server.';
+            if (mst) mst.textContent = 'CORS error - try refresh';
+            Toast.show('CORS blocked. Refresh the page or use a local server.', 'error', 8000);
+          } else {
+            if (pd) pd.textContent = 'Failed to load AI model. Check your internet connection and try again.';
+            if (mst) mst.textContent = 'Model load failed';
+            Toast.show('Failed to load AI model: ' + err.message, 'error');
+          }
+          throw err;
+        }
+      },
+
+      async processImage(imageData) {
+        if (!state.isModelLoaded) {
+          await this.load();
+        }
+
+        const img = imageData.originalCanvas;
+        const origW = img.width;
+        const origH = img.height;
+
+        // Update current file display with null guards
+        const cin = DOM['current-image-name'];
+        const cfi = DOM['current-file-info'];
+        if (cin) cin.textContent = imageData.metadata.name;
+        if (cfi) cfi.classList.remove('hidden');
+
+        let rawImage;
+        try {
+          const dataURL = img.toDataURL('image/png');
+          rawImage = await RawImage.fromURL(dataURL);
+        } catch (err) {
+          console.warn('RawImage.fromURL(dataURL) failed, trying blob fallback:', err);
+          const blob = await Utils.canvasToBlob(img, 'image/png');
+          const url = URL.createObjectURL(blob);
+          try {
+            rawImage = await RawImage.fromURL(url);
+          } finally {
+            URL.revokeObjectURL(url);
+          }
+        }
+
+        // Update per-file progress
+        const cip = DOM['current-image-percent'];
+        const cib = DOM['current-image-bar'];
+        if (cip) cip.textContent = '30%';
+        if (cib) cib.value = 30;
+
+        const { pixel_values } = await state.processor(rawImage);
+
+        if (cip) cip.textContent = '60%';
+        if (cib) cib.value = 60;
+
+        const outputs = await state.model({ input: pixel_values });
+
+        if (cip) cip.textContent = '80%';
+        if (cib) cib.value = 80;
+
+        // Try multiple possible output keys for model compatibility
+        const maskTensor = outputs.matte || outputs.output || outputs.predicted_alpha || outputs.logits || outputs.mask || outputs[0] || Object.values(outputs)[0];
+        if (!maskTensor) {
+          throw new Error('Model returned no recognizable output. Keys: ' + Object.keys(outputs).join(', '));
+        }
+        const squeezed = maskTensor.squeeze ? maskTensor.squeeze() : maskTensor;
+        const maskH = squeezed.dims[squeezed.dims.length - 2];
+        const maskW = squeezed.dims[squeezed.dims.length - 1];
+        const maskData = squeezed.data;
+
+        const floatMask = new Float32Array(maskH * maskW);
+        for (let i = 0; i < floatMask.length; i++) {
+          floatMask[i] = Math.max(0, Math.min(1, maskData[i]));
+        }
+
+        const resizedMask = this.resizeMaskBilinear(floatMask, maskW, maskH, origW, origH);
+
+        if (cip) cip.textContent = '100%';
+        if (cib) cib.value = 100;
+
+        return { maskData: resizedMask, width: origW, height: origH };
+      },
+
+      resizeMaskBilinear(src, srcW, srcH, dstW, dstH) {
+        const dst = new Float32Array(dstW * dstH);
+        const xRatio = srcW / dstW;
+        const yRatio = srcH / dstH;
+
+        for (let y = 0; y < dstH; y++) {
+          for (let x = 0; x < dstW; x++) {
+            const sx = x * xRatio;
+            const sy = y * yRatio;
+            const x0 = Math.floor(sx);
+            const y0 = Math.floor(sy);
+            const x1 = Math.min(x0 + 1, srcW - 1);
+            const y1 = Math.min(y0 + 1, srcH - 1);
+            const fx = sx - x0;
+            const fy = sy - y0;
+
+            const v00 = src[y0 * srcW + x0];
+            const v01 = src[y0 * srcW + x1];
+            const v10 = src[y1 * srcW + x0];
+            const v11 = src[y1 * srcW + x1];
+
+            dst[y * dstW + x] = v00 * (1 - fx) * (1 - fy) + v01 * fx * (1 - fy) + v10 * (1 - fx) * fy + v11 * fx * fy;
+          }
+        }
+        return dst;
+      },
+    };
+
+    // ==================== PROCESSING MODULE ====================
+    const Processing = {
+      init() {
+        DOM['process-btn'].addEventListener('click', () => this.start());
+        DOM['mobile-process-btn'].addEventListener('click', () => this.start());
+        DOM['cancel-processing-btn'].addEventListener('click', () => this.cancel());
+      },
+
+      timerInterval: null,
+      startTime: 0,
+
+      formatTime(ms) {
+        const s = Math.floor(ms / 1000);
+        const m = Math.floor(s / 60);
+        const ss = String(s % 60).padStart(2, '0');
+        const mm = String(m).padStart(2, '0');
+        return `${mm}:${ss}`;
+      },
+
+      startTimer() {
+        this.startTime = Date.now();
+        const timerEl = DOM['timer-display'];
+        if (!timerEl) return;
+        timerEl.textContent = '00:00';
+        this.timerInterval = setInterval(() => {
+          timerEl.textContent = this.formatTime(Date.now() - this.startTime);
+        }, 1000);
+      },
+
+      stopTimer() {
+        if (this.timerInterval) {
+          clearInterval(this.timerInterval);
+          this.timerInterval = null;
+        }
+      },
+
+      setStepperStep(step) {
+        // step: 1=upload done, 2=processing active, 3=complete
+        const line = DOM['stepper-line'];
+        if (line) line.style.width = ((step - 1) / 2 * 100) + '%';
+
+        // Step 1
+        const c1 = DOM['step-circle-1'];
+        const l1 = DOM['step-label-1'];
+        if (c1) {
+          c1.classList.toggle('completed', step >= 1);
+          c1.classList.toggle('active', step === 1);
+          c1.classList.toggle('processing', false);
+          if (step > 1) { c1.innerHTML = '<i class="fas fa-check text-lg sm:text-xl"></i>'; }
+          else { c1.innerHTML = '<i class="fas fa-cloud-upload-alt text-lg sm:text-xl"></i>'; }
+        }
+        if (l1) l1.classList.toggle('text-base-content/40', step < 1);
+
+        // Step 2
+        const c2 = DOM['step-circle-2'];
+        const l2 = DOM['step-label-2'];
+        if (c2) {
+          c2.classList.toggle('completed', step >= 3);
+          c2.classList.toggle('active', step === 2);
+          c2.classList.toggle('processing', step === 2);
+          if (step >= 3) { c2.innerHTML = '<i class="fas fa-check text-lg sm:text-xl"></i>'; }
+          else { c2.innerHTML = step === 2 ? '<i class="fas fa-cog fa-spin text-lg sm:text-xl"></i>' : '<i class="fas fa-brain text-lg sm:text-xl"></i>'; }
+        }
+        if (l2) {
+          l2.classList.toggle('text-primary', step === 2);
+          l2.classList.toggle('text-base-content/40', step !== 2);
+        }
+
+        // Step 3
+        const c3 = DOM['step-circle-3'];
+        const l3 = DOM['step-label-3'];
+        if (c3) {
+          c3.classList.toggle('completed', step >= 3);
+          c3.classList.toggle('active', step === 3);
+          c3.classList.toggle('processing', false);
+          if (step >= 3) { c3.innerHTML = '<i class="fas fa-check text-lg sm:text-xl"></i>'; }
+          else { c3.innerHTML = '<i class="fas fa-check text-lg sm:text-xl"></i>'; }
+        }
+        if (l3) {
+          l3.classList.toggle('text-green-500', step >= 3);
+          l3.classList.toggle('text-base-content/40', step < 3);
+        }
+      },
+
+      setStepList(step) {
+        // step 1-5: highlight current, mark previous as done
+        for (let i = 1; i <= 5; i++) {
+          const item = DOM[`sl-item-${i}`];
+          if (!item) continue;
+          item.classList.remove('active', 'done');
+          if (i < step) item.classList.add('done');
+          else if (i === step) item.classList.add('active');
+        }
+        const stepList = DOM['step-list'];
+        if (stepList) stepList.classList.remove('hidden');
+      },
+
+      resetStepList() {
+        for (let i = 1; i <= 5; i++) {
+          const item = DOM[`sl-item-${i}`];
+          if (item) item.classList.remove('active', 'done');
+        }
+        const stepList = DOM['step-list'];
+        if (stepList) stepList.classList.add('hidden');
+      },
+
+      setStatusIcon(mode) {
+        const wrapper = DOM['status-spinner-wrapper'];
+        const icon = DOM['status-main-icon'];
+        const ring = DOM['status-processing-ring'];
+        const pill = DOM['live-status-pill'];
+        const text = DOM['live-status-text'];
+        const pSpinner = DOM['progress-spinner'];
+        const sIcon = DOM['progress-status-icon'];
+
+        if (!wrapper || !icon) return;
+
+        if (mode === 'processing') {
+          icon.className = 'fas fa-crow text-3xl text-primary animate-pulse';
+          if (ring) ring.classList.remove('hidden');
+          if (pill) pill.classList.remove('hidden');
+          if (pSpinner) pSpinner.classList.remove('hidden');
+          if (sIcon) sIcon.classList.add('hidden');
+          wrapper.classList.add('animate-pulse-glow');
+        } else if (mode === 'done') {
+          icon.className = 'fas fa-check text-3xl text-green-500';
+          if (ring) ring.classList.add('hidden');
+          if (pill) pill.classList.add('hidden');
+          if (pSpinner) pSpinner.classList.add('hidden');
+          if (sIcon) { sIcon.className = 'fas fa-check-circle text-green-500'; sIcon.classList.remove('hidden'); }
+          wrapper.classList.remove('animate-pulse-glow');
+        } else if (mode === 'error') {
+          icon.className = 'fas fa-exclamation-triangle text-3xl text-error';
+          if (ring) ring.classList.add('hidden');
+          if (pill) pill.classList.add('hidden');
+          if (pSpinner) pSpinner.classList.add('hidden');
+          if (sIcon) { sIcon.className = 'fas fa-exclamation-circle text-error'; sIcon.classList.remove('hidden'); }
+          wrapper.classList.remove('animate-pulse-glow');
+        } else {
+          // idle
+          icon.className = 'fas fa-crow text-4xl text-primary';
+          if (ring) ring.classList.add('hidden');
+          if (pill) pill.classList.add('hidden');
+          if (pSpinner) pSpinner.classList.add('hidden');
+          if (sIcon) { sIcon.className = 'fas fa-tasks text-primary'; sIcon.classList.remove('hidden'); }
+          wrapper.classList.remove('animate-pulse-glow');
+        }
+      },
+
+      async start() {
+        if (state.isProcessing) return;
+        const pending = state.images.filter(img => img.status === 'pending');
+        if (pending.length === 0) {
+          Toast.show('No pending images to process', 'info');
+          return;
+        }
+
+        state.isProcessing = true;
+        state.cancelProcessing = false;
+        const total = pending.length;
+        let done = 0;
+
+        // Show processing section and set stepper to step 2 (AI Processing)
+        DOM['processing'].classList.remove('hidden');
+        this.setStepperStep(2);
+        this.setStatusIcon('processing');
+        this.startTimer();
+
+        const pt = DOM['processing-title'];
+        const pd = DOM['processing-desc'];
+        if (pt) pt.textContent = 'Removing Backgrounds...';
+        if (pd) pd.textContent = `AI is working on ${total} image(s). This may take a moment on first use.`;
+
+        const fileInfo = DOM['current-file-info'];
+        const overallLabel = DOM['overall-label'];
+        if (fileInfo) fileInfo.classList.remove('hidden');
+        if (overallLabel) overallLabel.textContent = 'Initializing AI model...';
+
+        DOM['process-btn'].disabled = true;
+
+        // Step 1: Load AI Model
+        this.setStepList(1);
+        const liveText = DOM['live-status-text'];
+        if (liveText) liveText.textContent = 'Step 1/5: Loading AI model...';
+
+        for (let i = 0; i < pending.length; i++) {
+          if (state.cancelProcessing) break;
+
+          const img = pending[i];
+          const imgIndex = state.images.indexOf(img);
+          img.status = 'processing';
+          Upload.updateUI();
+
+          // Update current file info
+          const cin = DOM['current-image-name'];
+          const cim = DOM['current-image-meta'];
+          if (cin) cin.textContent = img.metadata.name;
+          if (cim) cim.textContent = `${img.metadata.width} x ${img.metadata.height} | ${Utils.formatBytes(img.metadata.size)}`;
+
+          // Update queue stats
+          const qtot = DOM['queue-total'];
+          const qdone = DOM['queue-done'];
+          const qest = DOM['queue-est'];
+          const opct = DOM['overall-percent'];
+          const obar = DOM['overall-bar'];
+          if (qtot) qtot.textContent = total;
+          if (qdone) qdone.textContent = done;
+
+          // Estimate remaining time
+          const elapsed = Date.now() - this.startTime;
+          const rate = done > 0 ? elapsed / done : 0;
+          const remaining = Math.round(rate * (total - done) / 1000);
+          if (qest) qest.textContent = remaining > 0 ? remaining + 's' : 'calculating...';
+
+          // Update overall progress
+          const progressPct = Math.round((done / total) * 100);
+          if (opct) opct.textContent = progressPct + '%';
+          if (obar) obar.style.width = progressPct + '%';
+
+          try {
+            // Step 1: Load model (first time only, happens inside AI.processImage)
+            this.setStepList(1);
+            if (liveText) liveText.textContent = `Step 1/5: Loading AI model...`;
+            if (overallLabel) overallLabel.textContent = `Loading AI model for "${img.metadata.name}"...`;
+
+            const result = await AI.processImage(img);
+            img.maskData = result.maskData;
+
+            // Step 2-5 happen inside applyPostProcessing conceptually
+            // Step 2: Read image
+            this.setStepList(2);
+            if (liveText) liveText.textContent = `Step 2/5: Reading image data...`;
+            if (overallLabel) overallLabel.textContent = `Reading "${img.metadata.name}"...`;
+            await Utils.delay(100);
+
+            // Step 3: AI analyzing
+            this.setStepList(3);
+            if (liveText) liveText.textContent = `Step 3/5: AI analyzing pixels...`;
+            if (overallLabel) overallLabel.textContent = `AI analyzing "${img.metadata.name}"...`;
+            await Utils.delay(100);
+
+            // Step 4: Generate mask
+            this.setStepList(4);
+            if (liveText) liveText.textContent = `Step 4/5: Generating mask...`;
+            if (overallLabel) overallLabel.textContent = `Generating mask for "${img.metadata.name}"...`;
+
+            await this.applyPostProcessing(img);
+
+            // Step 5: Finalize
+            this.setStepList(5);
+            if (liveText) liveText.textContent = `Step 5/5: Finalizing...`;
+            if (overallLabel) overallLabel.textContent = `Finalizing "${img.metadata.name}"...`;
+            await Utils.delay(200);
+
+            img.status = 'done';
+            done++;
+            state.sessionStats.imagesProcessed++;
+            localStorage.setItem('brp_imagesProcessed', state.sessionStats.imagesProcessed);
+
+            if (imgIndex === state.currentImageIndex) {
+              Preview.show(imgIndex);
+            }
+
+            Upload.updateUI();
+
+            const pct = Math.round((done / total) * 100);
+            DOM['overall-percent'].textContent = pct + '%';
+            DOM['overall-bar'].style.width = pct + '%';
+
+          } catch (err) {
+            console.error('Processing error:', err);
+            img.status = 'error';
+            img.error = err.message;
+            Upload.updateUI();
+            Toast.show(`Failed: ${img.metadata.name}`, 'error');
+            this.setStatusIcon('error');
+          }
+        }
+
+        // Complete state
+        this.stopTimer();
+        const finalElapsed = this.formatTime(Date.now() - this.startTime);
+
+        const opct = DOM['overall-percent'];
+        const obar = DOM['overall-bar'];
+        const qdone = DOM['queue-done'];
+        if (opct) opct.textContent = '100%';
+        if (obar) obar.style.width = '100%';
+        if (qdone) qdone.textContent = done;
+
+        if (!state.cancelProcessing && done > 0) {
+          // Step 3: Complete
+          this.setStepperStep(3);
+          this.setStatusIcon('done');
+          this.setStepList(5); // Mark all steps done
+          if (pt) pt.textContent = 'All Done! Backgrounds Removed';
+          if (pd) pd.textContent = `${done} image(s) processed successfully in ${finalElapsed}`;
+          if (overallLabel) overallLabel.textContent = 'Processing complete!';
+          if (fileInfo) fileInfo.classList.add('hidden');
+          if (liveText) liveText.textContent = 'Complete!';
+
+          if (Confetti) Confetti.launch();
+          Toast.show(`Processed ${done} image(s) in ${finalElapsed}!`, 'success');
+        } else {
+          if (pt) pt.textContent = state.cancelProcessing ? 'Processing Cancelled' : 'Processing Complete';
+          if (pd) pd.textContent = `${done} of ${total} images processed`;
+          this.setStatusIcon('idle');
+        }
+
+        state.isProcessing = false;
+        const pb = DOM['process-btn'];
+        if (pb) pb.disabled = false;
+        Upload.updateUI();
+
+        await Utils.delay(3000);
+        if (!state.cancelProcessing) {
+          const proc = DOM['processing'];
+          if (proc) proc.classList.add('hidden');
+          // Reset for next time
+          this.setStepperStep(1);
+          this.setStatusIcon('idle');
+          this.resetStepList();
+        }
+
+        if (done > 0) {
+          const firstDone = state.images.findIndex(img => img.status === 'done');
+          if (firstDone >= 0) {
+            state.currentImageIndex = firstDone;
+            Upload.showMetadata(state.images[firstDone]);
+            Upload.updateUI();
+            Preview.show(firstDone);
+          }
+        }
+      },
+
+      async applyPostProcessing(imageData) {
+        const orig = imageData.originalCanvas;
+        const w = orig.width;
+        const h = orig.height;
+        let mask = new Float32Array(imageData.maskData);
+
+        const threshold = state.settings.threshold / 255;
+        for (let i = 0; i < mask.length; i++) {
+          mask[i] = mask[i] < threshold ? 0 : mask[i];
+        }
+
+        if (state.settings.feather > 0) {
+          mask = this.featherMask(mask, w, h, state.settings.feather);
+        }
+
+        if (state.settings.edgeRefinement !== 0) {
+          mask = this.refineEdges(mask, w, h, state.settings.edgeRefinement);
+        }
+
+        const canvas = Utils.createCanvas(w, h);
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(orig, 0, 0);
+        const imgData = ctx.getImageData(0, 0, w, h);
+        const data = imgData.data;
+
+        for (let i = 0; i < mask.length; i++) {
+          data[i * 4 + 3] = Math.round(Utils.clamp(mask[i], 0, 1) * 255);
+        }
+        ctx.putImageData(imgData, 0, 0);
+
+        if (state.settings.autoCrop) {
+          this.autoCrop(imageData, canvas, data, w, h);
+          return;
+        }
+
+        imageData.processedCanvas = canvas;
+        imageData.maskData = mask;
+
+        await Preview.applyBackgroundEffect(imageData);
+      },
+
+      featherMask(mask, w, h, radius) {
+        if (radius <= 0) return mask;
+        const result = new Float32Array(mask);
+        const temp = new Float32Array(w * h);
+
+        const kernelSize = Math.ceil(radius * 2) | 1;
+        const half = kernelSize >> 1;
+        const kernel = new Float32Array(kernelSize);
+        let sum = 0;
+        for (let i = 0; i < kernelSize; i++) {
+          const x = i - half;
+          kernel[i] = Math.exp(-(x * x) / (2 * radius * radius));
+          sum += kernel[i];
+        }
+        for (let i = 0; i < kernelSize; i++) kernel[i] /= sum;
+
+        for (let y = 0; y < h; y++) {
+          for (let x = 0; x < w; x++) {
+            let val = 0;
+            for (let k = 0; k < kernelSize; k++) {
+              const px = Utils.clamp(x + k - half, 0, w - 1);
+              val += mask[y * w + px] * kernel[k];
+            }
+            temp[y * w + x] = val;
+          }
+        }
+        for (let x = 0; x < w; x++) {
+          for (let y = 0; y < h; y++) {
+            let val = 0;
+            for (let k = 0; k < kernelSize; k++) {
+              const py = Utils.clamp(y + k - half, 0, h - 1);
+              val += temp[py * w + x] * kernel[k];
+            }
+            result[y * w + x] = val;
+          }
+        }
+        return result;
+      },
+
+      refineEdges(mask, w, h, amount) {
+        if (amount === 0) return mask;
+        const result = new Float32Array(mask.length);
+        const sharpened = new Float32Array(mask.length);
+        const strength = amount / 50;
+
+        for (let y = 1; y < h - 1; y++) {
+          for (let x = 1; x < w - 1; x++) {
+            const i = y * w + x;
+            const blurred = (
+              mask[(y - 1) * w + x] + mask[(y + 1) * w + x] +
+              mask[y * w + x - 1] + mask[y * w + x + 1]
+            ) * 0.25;
+            sharpened[i] = Utils.clamp(mask[i] + (mask[i] - blurred) * strength * 0.5, 0, 1);
+          }
+        }
+
+        for (let i = 0; i < mask.length; i++) {
+          if (sharpened[i] === 0) sharpened[i] = mask[i];
+          result[i] = sharpened[i];
+        }
+        return result;
+      },
+
+      autoCrop(imageData, canvas, data, w, h) {
+        const padding = state.settings.cropPadding;
+        const bounds = Utils.getAlphaBounds(data, w, h);
+        if (!bounds) {
+          imageData.processedCanvas = canvas;
+          return;
+        }
+
+        const cx = Math.max(0, bounds.x - padding);
+        const cy = Math.max(0, bounds.y - padding);
+        const cw = Math.min(w - cx, bounds.w + padding * 2);
+        const ch = Math.min(h - cy, bounds.h + padding * 2);
+
+        const cropped = Utils.createCanvas(cw, ch);
+        cropped.getContext('2d').drawImage(canvas, cx, cy, cw, ch, 0, 0, cw, ch);
+        imageData.processedCanvas = cropped;
+      },
+
+      cancel() {
+        state.cancelProcessing = true;
+        DOM['processing-desc'].textContent = 'Cancelling...';
+      },
+    };
+
+    // ==================== PREVIEW MODULE ====================
+    const Preview = {
+      init() {
+        this.setupViewTabs();
+        this.setupComparisonSlider();
+        this.setupZoomControls();
+        this.setupToolControls();
+        this.setupBackgroundControls();
+        this.setupDownloadButtons();
+      },
+
+      show(index) {
+        const img = state.images[index];
+        if (!img || !img.processedCanvas) return;
+
+        state.currentImageIndex = index;
+        DOM['preview'].classList.remove('hidden');
+        Upload.showMetadata(img);
+        Upload.updateUI();
+
+        DOM['preview-before-img'].src = img.originalUrl;
+        DOM['preview-side-before'].src = img.originalUrl;
+        DOM['preview-original-only'].src = img.originalUrl;
+
+        this.updatePreviewCanvas(img);
+        this.renderMiniStrip();
+
+        setTimeout(() => {
+          const el = DOM['preview'];
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      },
+
+      hide() {
+        DOM['preview'].classList.add('hidden');
+      },
+
+      updatePreviewCanvas(imageData) {
+        if (!imageData.processedCanvas) return;
+        const canvas = imageData.processedCanvas;
+
+        const afterCanvas = DOM['preview-after-canvas'];
+        afterCanvas.width = canvas.width;
+        afterCanvas.height = canvas.height;
+        afterCanvas.getContext('2d').drawImage(canvas, 0, 0);
+
+        const sideAfter = DOM['preview-side-after'];
+        sideAfter.width = canvas.width;
+        sideAfter.height = canvas.height;
+        sideAfter.getContext('2d').drawImage(canvas, 0, 0);
+
+        const resultOnly = DOM['preview-result-only'];
+        resultOnly.width = canvas.width;
+        resultOnly.height = canvas.height;
+        resultOnly.getContext('2d').drawImage(canvas, 0, 0);
+
+        if (imageData.maskData) {
+          const maskCanvas = DOM['preview-mask-canvas'];
+          maskCanvas.width = canvas.width;
+          maskCanvas.height = canvas.height;
+          const mctx = maskCanvas.getContext('2d');
+          const mData = mctx.createImageData(canvas.width, canvas.height);
+          for (let i = 0; i < imageData.maskData.length; i++) {
+            const v = Math.round(imageData.maskData[i] * 255);
+            mData.data[i * 4] = v;
+            mData.data[i * 4 + 1] = v;
+            mData.data[i * 4 + 2] = v;
+            mData.data[i * 4 + 3] = 255;
+          }
+          mctx.putImageData(mData, 0, 0);
+        }
+      },
+
+      async applyBackgroundEffect(imageData) {
+        if (!imageData.processedCanvas || !imageData.maskData) return;
+
+        const w = imageData.originalCanvas.width;
+        const h = imageData.originalCanvas.height;
+        const canvas = Utils.createCanvas(w, h);
+        const ctx = canvas.getContext('2d');
+
+        switch (state.settings.backgroundType) {
+          case 'transparent':
+            ctx.drawImage(imageData.processedCanvas, 0, 0);
+            break;
+
+          case 'blur': {
+            ctx.filter = `blur(${state.settings.backgroundBlur}px)`;
+            ctx.drawImage(imageData.originalCanvas, 0, 0);
+            ctx.filter = 'none';
+            const subjectCanvas = Utils.createCanvas(w, h);
+            subjectCanvas.getContext('2d').drawImage(imageData.processedCanvas, 0, 0);
+            ctx.drawImage(subjectCanvas, 0, 0);
+            break;
+          }
+
+          case 'color': {
+            ctx.fillStyle = state.settings.backgroundColor;
+            ctx.fillRect(0, 0, w, h);
+            ctx.drawImage(imageData.processedCanvas, 0, 0);
+            break;
+          }
+
+          case 'gradient': {
+            const grad = ctx.createLinearGradient(0, 0, w, h);
+            grad.addColorStop(0, state.settings.backgroundGradient[0]);
+            grad.addColorStop(1, state.settings.backgroundGradient[1]);
+            ctx.fillStyle = grad;
+            ctx.fillRect(0, 0, w, h);
+            ctx.drawImage(imageData.processedCanvas, 0, 0);
+            break;
+          }
+
+          case 'image': {
+            if (this.customBgImage) {
+              ctx.drawImage(this.customBgImage, 0, 0, w, h);
+              ctx.drawImage(imageData.processedCanvas, 0, 0);
+            } else {
+              ctx.drawImage(imageData.processedCanvas, 0, 0);
+            }
+            break;
+          }
+
+          default:
+            ctx.drawImage(imageData.processedCanvas, 0, 0);
+        }
+
+        imageData.processedCanvas = canvas;
+        if (state.currentImageIndex === state.images.indexOf(imageData)) {
+          this.updatePreviewCanvas(imageData);
+        }
+      },
+
+      renderMiniStrip() {
+        const container = DOM['mini-strip-container'];
+        const strip = DOM['mini-strip'];
+        const doneImages = state.images.filter(img => img.status === 'done');
+        if (doneImages.length <= 1) {
+          container.classList.add('hidden');
+          return;
+        }
+        container.classList.remove('hidden');
+        strip.innerHTML = doneImages.map((img, i) => {
+          const idx = state.images.indexOf(img);
+          return `
+            <div class="mini-preview flex-shrink-0 w-20 h-20 ${idx === state.currentImageIndex ? 'active' : ''}" data-index="${idx}">
+              <img src="${img.thumbnail}" class="w-full h-full object-cover" alt="${img.metadata.name}">
+            </div>
+          `;
+        }).join('');
+
+        strip.querySelectorAll('.mini-preview').forEach(el => {
+          el.addEventListener('click', () => {
+            const idx = parseInt(el.dataset.index);
+            state.currentImageIndex = idx;
+            Upload.showMetadata(state.images[idx]);
+            Upload.updateUI();
+            this.show(idx);
+          });
+        });
+      },
+
+      setupViewTabs() {
+        const tabs = ['slider', 'side', 'original', 'result'];
+        tabs.forEach(view => {
+          DOM[`view-${view}`].addEventListener('click', () => this.switchView(view));
+        });
+      },
+
+      switchView(view) {
+        state.ui.currentView = view;
+        ['slider', 'side', 'original', 'result'].forEach(v => {
+          const btn = DOM[`view-${v}`];
+          const panel = DOM[`preview-${v}-view`];
+          if (btn) btn.classList.toggle('tab-active', v === view);
+          if (panel) panel.classList.toggle('hidden', v !== view);
+        });
+        DOM['preview-mask-view'].classList.add('hidden');
+      },
+
+      setupComparisonSlider() {
+        const container = DOM['preview-slider-view'];
+        const slider = DOM['comparison-slider'];
+        const afterContainer = DOM['comparison-after-container'];
+
+        const updateSlider = (x) => {
+          const rect = container.getBoundingClientRect();
+          const pct = Utils.clamp(((x - rect.left) / rect.width) * 100, 0, 100);
+          state.ui.sliderPosition = pct;
+          afterContainer.style.width = pct + '%';
+          slider.style.left = pct + '%';
+        };
+
+        slider.addEventListener('mousedown', (e) => {
+          state.ui.isSliderDragging = true;
+          e.preventDefault();
+        });
+        slider.addEventListener('touchstart', (e) => {
+          state.ui.isSliderDragging = true;
+        }, { passive: true });
+
+        document.addEventListener('mousemove', (e) => {
+          if (!state.ui.isSliderDragging) return;
+          updateSlider(e.clientX);
+        });
+        document.addEventListener('touchmove', (e) => {
+          if (!state.ui.isSliderDragging) return;
+          updateSlider(e.touches[0].clientX);
+        }, { passive: true });
+
+        document.addEventListener('mouseup', () => state.ui.isSliderDragging = false);
+        document.addEventListener('touchend', () => state.ui.isSliderDragging = false);
+
+        container.addEventListener('click', (e) => {
+          if (e.target === slider || slider.contains(e.target)) return;
+          updateSlider(e.clientX);
+        });
+      },
+
+      setupZoomControls() {
+        let scale = 1;
+        const updateZoom = () => {
+          DOM['zoom-level'].textContent = Math.round(scale * 100) + '%';
+          const views = ['preview-slider-view', 'preview-side-view', 'preview-original-view', 'preview-result-view'];
+          views.forEach(id => {
+            const el = DOM[id];
+            if (el && !el.classList.contains('hidden')) {
+              const target = id === 'preview-slider-view' ? el.querySelector('img, canvas') : el.querySelector('img, canvas');
+              if (target) {
+                target.style.transform = `scale(${scale})`;
+                target.style.transformOrigin = 'center center';
+              }
+            }
+          });
+        };
+
+        DOM['zoom-in-btn'].addEventListener('click', () => { scale = Math.min(scale + 0.25, 4); updateZoom(); });
+        DOM['zoom-out-btn'].addEventListener('click', () => { scale = Math.max(scale - 0.25, 0.25); updateZoom(); });
+        DOM['zoom-reset-btn'].addEventListener('click', () => { scale = 1; updateZoom(); });
+        DOM['fullscreen-btn'].addEventListener('click', () => {
+          const el = DOM['preview-slider-view'];
+          if (!document.fullscreenElement) {
+            el.requestFullscreen();
+          } else {
+            document.exitFullscreen();
+          }
+        });
+      },
+
+      setupToolControls() {
+        const updateLabel = (slider, label, suffix = '') => {
+          DOM[label].textContent = slider.value + suffix;
+        };
+
+        DOM['edge-slider'].addEventListener('input', (e) => {
+          state.settings.edgeRefinement = parseInt(e.target.value);
+          updateLabel(e.target, 'edge-value');
+          this.reprocessCurrent();
+        });
+        DOM['feather-slider'].addEventListener('input', (e) => {
+          state.settings.feather = parseInt(e.target.value);
+          updateLabel(e.target, 'feather-value');
+          this.reprocessCurrent();
+        });
+        DOM['threshold-slider'].addEventListener('input', (e) => {
+          state.settings.threshold = parseInt(e.target.value);
+          updateLabel(e.target, 'threshold-value');
+          this.reprocessCurrent();
+        });
+
+        const cropToggle = DOM['auto-crop-toggle'];
+        cropToggle.addEventListener('click', () => {
+          state.settings.autoCrop = !state.settings.autoCrop;
+          cropToggle.classList.toggle('active', state.settings.autoCrop);
+          const ctrl = DOM['crop-padding-control'];
+          ctrl.style.opacity = state.settings.autoCrop ? '1' : '0.3';
+          ctrl.style.pointerEvents = state.settings.autoCrop ? 'auto' : 'none';
+          this.reprocessCurrent();
+        });
+        DOM['crop-padding-slider'].addEventListener('input', (e) => {
+          state.settings.cropPadding = parseInt(e.target.value);
+          updateLabel(e.target, 'crop-padding-value', 'px');
+          this.reprocessCurrent();
+        });
+      },
+
+      setupBackgroundControls() {
+        document.querySelectorAll('.tool-btn[data-bg]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const bg = btn.dataset.bg;
+            if (bg === 'mask') {
+              this.switchView('slider');
+              DOM['preview-slider-view'].classList.add('hidden');
+              DOM['preview-mask-view'].classList.remove('hidden');
+              document.querySelectorAll('.tool-btn[data-bg]').forEach(b => b.classList.remove('active'));
+              btn.classList.add('active');
+              return;
+            }
+
+            DOM['preview-mask-view'].classList.add('hidden');
+            state.settings.backgroundType = bg;
+            document.querySelectorAll('.tool-btn[data-bg]').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            btn.classList.add('active');
+
+            DOM['bg-color-control'].classList.toggle('hidden', bg !== 'color');
+            DOM['bg-gradient-control'].classList.toggle('hidden', bg !== 'gradient');
+            DOM['bg-blur-control'].classList.toggle('hidden', bg !== 'blur');
+            DOM['bg-image-control'].classList.toggle('hidden', bg !== 'image');
+
+            const img = state.images[state.currentImageIndex];
+            if (img && img.processedCanvas) {
+              this.applyBackgroundEffect(img);
+            }
+          });
+        });
+
+        DOM['bg-custom-color'].addEventListener('input', (e) => {
+          state.settings.backgroundColor = e.target.value;
+          const img = state.images[state.currentImageIndex];
+          if (img) this.applyBackgroundEffect(img);
+        });
+        document.querySelectorAll('#bg-color-control button[data-color]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            state.settings.backgroundColor = btn.dataset.color;
+            DOM['bg-custom-color'].value = btn.dataset.color;
+            const img = state.images[state.currentImageIndex];
+            if (img) this.applyBackgroundEffect(img);
+          });
+        });
+        ['bg-gradient-1', 'bg-gradient-2'].forEach((id, i) => {
+          DOM[id].addEventListener('input', (e) => {
+            state.settings.backgroundGradient[i] = e.target.value;
+            const img = state.images[state.currentImageIndex];
+            if (img) this.applyBackgroundEffect(img);
+          });
+        });
+        DOM['bg-blur-slider'].addEventListener('input', (e) => {
+          state.settings.backgroundBlur = parseInt(e.target.value);
+          const img = state.images[state.currentImageIndex];
+          if (img) this.applyBackgroundEffect(img);
+        });
+        DOM['bg-image-input'].addEventListener('change', async (e) => {
+          const file = e.target.files[0];
+          if (!file) return;
+          const url = URL.createObjectURL(file);
+          this.customBgImage = await Utils.loadImage(url);
+          URL.revokeObjectURL(url);
+          const img = state.images[state.currentImageIndex];
+          if (img) this.applyBackgroundEffect(img);
+        });
+
+        DOM['restore-original-btn'].addEventListener('click', () => {
+          const img = state.images[state.currentImageIndex];
+          if (!img) return;
+          img.processedCanvas = null;
+          img.maskData = null;
+          img.status = 'pending';
+          Upload.updateUI();
+          this.hide();
+          Toast.show('Image restored to original', 'info');
+        });
+      },
+
+      customBgImage: null,
+
+      async reprocessCurrent() {
+        const img = state.images[state.currentImageIndex];
+        if (!img || !img.maskData || state.isProcessing) return;
+        await Processing.applyPostProcessing(img);
+      },
+
+      setupDownloadButtons() {
+        DOM['download-png-btn'].addEventListener('click', () => this.downloadCurrent('image/png', '.png'));
+        DOM['download-webp-btn'].addEventListener('click', () => this.downloadCurrent('image/webp', '.webp'));
+        DOM['download-zip-btn'].addEventListener('click', () => this.downloadAllAsZip());
+      },
+
+      downloadCurrent(mime, ext) {
+        const img = state.images[state.currentImageIndex];
+        if (!img || !img.processedCanvas) {
+          Toast.show('No processed image to download', 'warning');
+          return;
+        }
+        const canvas = img.processedCanvas;
+        const q = mime === 'image/png' ? undefined : state.settings.quality;
+        canvas.toBlob((blob) => {
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          const baseName = img.metadata.name.replace(/\.[^/.]+$/, '');
+          a.download = `${baseName}_no-bg${ext}`;
+          a.click();
+          URL.revokeObjectURL(url);
+          Toast.show(`Downloaded as ${ext.slice(1).toUpperCase()}`, 'success');
+        }, mime, q);
+      },
+
+      async downloadAllAsZip() {
+        const doneImages = state.images.filter(img => img.status === 'done' && img.processedCanvas);
+        if (doneImages.length === 0) {
+          Toast.show('No processed images to download', 'warning');
+          return;
+        }
+
+        Toast.show(`Creating ZIP with ${doneImages.length} images...`, 'info', 0);
+        const zip = new JSZip();
+        const folder = zip.folder('background-removed');
+
+        for (let i = 0; i < doneImages.length; i++) {
+          const img = doneImages[i];
+          const canvas = img.processedCanvas;
+          const blob = await Utils.canvasToBlob(canvas, 'image/png');
+          const baseName = img.metadata.name.replace(/\.[^/.]+$/, '');
+          folder.file(`${baseName}_no-bg.png`, blob);
+        }
+
+        const content = await zip.generateAsync({ type: 'blob' });
+        const url = URL.createObjectURL(content);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'background-removed-images.zip';
+        a.click();
+        URL.revokeObjectURL(url);
+        Toast.show('ZIP downloaded successfully', 'success');
+      },
+    };
+
+    // ==================== SETTINGS MODULE ====================
+    const Settings = {
+      init() {
+        this.loadSettings();
+        this.bindEvents();
+      },
+
+      loadSettings() {
+        const saved = localStorage.getItem('brp_settings');
+        if (saved) {
+          try {
+            const parsed = JSON.parse(saved);
+            Object.assign(state.settings, parsed);
+          } catch { /* ignore */ }
+        }
+
+        const setVal = (key, val) => { if (DOM[key]) DOM[key].value = val; };
+        const setText = (key, val) => { if (DOM[key]) DOM[key].textContent = val; };
+
+        setVal('setting-output-format', state.settings.outputFormat);
+        setVal('setting-quality', state.settings.quality);
+        setText('setting-quality-value', Math.round(state.settings.quality * 100) + '%');
+
+        document.querySelectorAll('.setting-mode').forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.mode === state.settings.processingMode);
+          btn.classList.toggle('btn-primary', btn.dataset.mode === state.settings.processingMode);
+          btn.classList.toggle('btn-outline', btn.dataset.mode !== state.settings.processingMode);
+        });
+
+        const qt = DOM['setting-quantized-toggle'];
+        if (qt) qt.classList.toggle('active', state.settings.quantized);
+        setVal('setting-default-bg', state.settings.backgroundType);
+        Theme.set(state.settings.theme);
+      },
+
+      bindEvents() {
+        const on = (key, evt, fn) => { const el = DOM[key]; if (el) el.addEventListener(evt, fn); };
+
+        on('setting-output-format', 'change', (e) => {
+          state.settings.outputFormat = e.target.value;
+          this.save();
+        });
+        on('setting-quality', 'input', (e) => {
+          state.settings.quality = parseFloat(e.target.value);
+          const qv = DOM['setting-quality-value'];
+          if (qv) qv.textContent = Math.round(state.settings.quality * 100) + '%';
+          this.save();
+        });
+
+        document.querySelectorAll('.setting-mode').forEach(btn => {
+          btn.addEventListener('click', () => {
+            state.settings.processingMode = btn.dataset.mode;
+            document.querySelectorAll('.setting-mode').forEach(b => {
+              b.classList.remove('active', 'btn-primary');
+              b.classList.add('btn-outline');
+            });
+            btn.classList.add('active', 'btn-primary');
+            btn.classList.remove('btn-outline');
+            this.save();
+          });
+        });
+
+        on('setting-quantized-toggle', 'click', () => {
+          state.settings.quantized = !state.settings.quantized;
+          const qt = DOM['setting-quantized-toggle'];
+          if (qt) qt.classList.toggle('active', state.settings.quantized);
+          state.isModelLoaded = false;
+          state.model = null;
+          state.processor = null;
+          this.save();
+        });
+
+        document.querySelectorAll('.setting-theme').forEach(btn => {
+          btn.addEventListener('click', () => {
+            Theme.set(btn.dataset.theme);
+            this.save();
+          });
+        });
+
+        on('setting-default-bg', 'change', (e) => {
+          state.settings.backgroundType = e.target.value;
+          this.save();
+        });
+
+        on('setting-fps-toggle', 'click', () => {
+          state.settings.showFps = !state.settings.showFps;
+          const ft = DOM['setting-fps-toggle'];
+          if (ft) ft.classList.toggle('active', state.settings.showFps);
+          this.save();
+        });
+
+        on('reset-settings-btn', 'click', () => {
+          state.settings = {
+            outputFormat: 'png',
+            quality: 0.95,
+            processingMode: 'balanced',
+            quantized: true,
+            edgeRefinement: 0,
+            feather: 0,
+            threshold: 128,
+            autoCrop: false,
+            cropPadding: 10,
+            backgroundType: 'transparent',
+            backgroundColor: '#FFFFFF',
+            backgroundGradient: ['#FFD600', '#FFFFFF'],
+            backgroundBlur: 20,
+            theme: 'light',
+            showFps: false,
+          };
+          localStorage.removeItem('brp_settings');
+          this.loadSettings();
+          Toast.show('Settings reset to defaults', 'info');
+        });
+      },
+
+      save() {
+        localStorage.setItem('brp_settings', JSON.stringify(state.settings));
+      }
+    };
+
+    // ==================== SCROLL & NAVIGATION ====================
+    const Navigation = {
+      init() {
+        const scrollTop = DOM['scroll-to-top'];
+        if (scrollTop) {
+          scrollTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        }
+        window.addEventListener('scroll', Utils.debounce(() => {
+          if (scrollTop) scrollTop.classList.toggle('visible', window.scrollY > 500);
+        }, 100));
+
+        // Rewrite all #anchor hrefs to javascript:void(0) to suppress file:// warnings,
+        // then handle scrolling via click listeners.
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+          const href = link.getAttribute('href');
+          if (href === '#') return;
+          const targetId = href.slice(1);
+          link.setAttribute('href', 'javascript:void(0)');
+          link.dataset.navTarget = targetId;
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = document.getElementById(link.dataset.navTarget);
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              const drawer = DOM['settings-drawer'];
+              if (drawer && drawer.tagName === 'INPUT' && drawer.type === 'checkbox') drawer.checked = false;
+            }
+          });
+        });
+      }
+    };
+
+    // ==================== WELCOME MODAL ====================
+    const WelcomeModal = {
+      init() {
+        const dontShow = localStorage.getItem('brp_dontShowWelcome');
+        if (!dontShow && DOM['welcome-modal']) {
+          setTimeout(() => {
+            if (DOM['welcome-modal'].showModal) {
+              DOM['welcome-modal'].showModal();
+            } else {
+              DOM['welcome-modal'].setAttribute('open', '');
+            }
+          }, 500);
+        }
+
+        DOM['welcome-modal-close'].addEventListener('click', () => {
+          if (DOM['dont-show-welcome'].checked) {
+            localStorage.setItem('brp_dontShowWelcome', '1');
+          }
+          DOM['welcome-modal'].close();
+        });
+      }
+    };
+
+    // ==================== SAMPLE IMAGE ====================
+    const SampleImage = {
+      init() {
+        const btn = DOM['try-sample-btn'];
+        if (btn) btn.addEventListener('click', () => this.loadSample());
+      },
+
+      drawParrot(canvas) {
+        const W = 800, H = 600;
+        canvas.width = W; canvas.height = H;
+        const ctx = canvas.getContext('2d');
+
+        // Sky gradient
+        const sky = ctx.createLinearGradient(0, 0, 0, H);
+        sky.addColorStop(0, '#87CEEB');
+        sky.addColorStop(0.5, '#B0E0E6');
+        sky.addColorStop(1, '#E0F6FF');
+        ctx.fillStyle = sky;
+        ctx.fillRect(0, 0, W, H);
+
+        // Sun
+        const sun = ctx.createRadialGradient(680, 100, 10, 680, 100, 70);
+        sun.addColorStop(0, '#FFF9C4');
+        sun.addColorStop(0.3, '#FFD600');
+        sun.addColorStop(1, 'transparent');
+        ctx.fillStyle = sun;
+        ctx.beginPath(); ctx.arc(680, 100, 70, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = '#FFD600';
+        ctx.beginPath(); ctx.arc(680, 100, 32, 0, Math.PI * 2); ctx.fill();
+
+        // Clouds
+        [{x:150,y:90,s:1},{x:500,y:60,s:0.8},{x:350,y:130,s:0.6}].forEach(c=>{
+          ctx.fillStyle = 'rgba(255,255,255,0.85)';
+          ctx.beginPath();
+          ctx.arc(c.x,c.y,30*c.s,0,Math.PI*2);
+          ctx.arc(c.x+25*c.s,c.y-10*c.s,35*c.s,0,Math.PI*2);
+          ctx.arc(c.x+50*c.s,c.y,28*c.s,0,Math.PI*2);
+          ctx.arc(c.x+25*c.s,c.y+12*c.s,25*c.s,0,Math.PI*2);
+          ctx.fill();
+        });
+
+        // Hills
+        ctx.fillStyle = '#7CB342';
+        ctx.beginPath(); ctx.moveTo(0, H-180); ctx.quadraticCurveTo(200, H-280, 400, H-200); ctx.quadraticCurveTo(600, H-120, W, H-220); ctx.lineTo(W, H); ctx.lineTo(0, H); ctx.fill();
+        ctx.fillStyle = '#8BC34A';
+        ctx.beginPath(); ctx.moveTo(0, H-140); ctx.quadraticCurveTo(250, H-240, 500, H-160); ctx.quadraticCurveTo(650, H-100, W, H-180); ctx.lineTo(W, H); ctx.lineTo(0, H); ctx.fill();
+        ctx.fillStyle = '#9CCC65';
+        ctx.beginPath(); ctx.moveTo(0, H-100); ctx.quadraticCurveTo(300, H-180, 600, H-120); ctx.lineTo(W, H-150); ctx.lineTo(W, H); ctx.lineTo(0, H); ctx.fill();
+
+        // Tree
+        const drawTree = (x, y, s) => {
+          ctx.fillStyle = '#795548';
+          ctx.fillRect(x-6*s, y, 12*s, 50*s);
+          ctx.fillStyle = '#43A047';
+          ctx.beginPath(); ctx.arc(x, y-10*s, 28*s, 0, Math.PI*2); ctx.fill();
+          ctx.fillStyle = '#66BB6A';
+          ctx.beginPath(); ctx.arc(x-15*s, y+5*s, 20*s, 0, Math.PI*2); ctx.fill();
+          ctx.beginPath(); ctx.arc(x+15*s, y+5*s, 20*s, 0, Math.PI*2); ctx.fill();
+          ctx.beginPath(); ctx.arc(x, y-30*s, 22*s, 0, Math.PI*2); ctx.fill();
+        };
+        drawTree(80, H-200, 1.2);
+        drawTree(700, H-210, 1);
+        drawTree(60, H-160, 0.7);
+
+        // Branch for parrot
+        ctx.strokeStyle = '#5D4037';
+        ctx.lineWidth = 8;
+        ctx.lineCap = 'round';
+        ctx.beginPath(); ctx.moveTo(200, H-320); ctx.quadraticCurveTo(350, H-280, 550, H-340); ctx.stroke();
+        ctx.lineWidth = 4;
+        ctx.beginPath(); ctx.moveTo(350, H-280); ctx.lineTo(380, H-250); ctx.stroke();
+
+        // Leaves on branch
+        [{x:230,y:H-310},{x:480,y:H-325},{x:380,y:H-250}].forEach(l=>{
+          ctx.fillStyle = '#66BB6A';
+          ctx.beginPath(); ctx.ellipse(l.x, l.y, 18, 8, Math.PI/4, 0, Math.PI*2); ctx.fill();
+          ctx.fillStyle = '#81C784';
+          ctx.beginPath(); ctx.ellipse(l.x+5, l.y-3, 14, 6, Math.PI/3, 0, Math.PI*2); ctx.fill();
+        });
+
+        // === CLAY PARROT ===
+        const px = 380, py = H - 340; // parrot center on branch
+
+        // Tail feathers
+        const tailColors = ['#E53935', '#FB8C00', '#FFD600', '#43A047', '#1E88E5'];
+        tailColors.forEach((col, i) => {
+          const angle = -0.3 + i * 0.15;
+          ctx.save();
+          ctx.translate(px-55, py+15);
+          ctx.rotate(angle);
+          ctx.fillStyle = col;
+          ctx.beginPath();
+          ctx.ellipse(-25 - i*3, i*4, 28, 8, 0, 0, Math.PI*2);
+          ctx.fill();
+          ctx.restore();
+        });
+
+        // Body (clay style - oval)
+        const bodyGrad = ctx.createRadialGradient(px-5, py-25, 5, px, py-10, 55);
+        bodyGrad.addColorStop(0, '#FFEB3B');
+        bodyGrad.addColorStop(0.6, '#FDD835');
+        bodyGrad.addColorStop(1, '#F9A825');
+        ctx.fillStyle = bodyGrad;
+        ctx.beginPath();
+        ctx.ellipse(px, py-15, 48, 58, -0.15, 0, Math.PI*2);
+        ctx.fill();
+
+        // Body highlight (clay shine)
+        ctx.fillStyle = 'rgba(255,255,255,0.25)';
+        ctx.beginPath();
+        ctx.ellipse(px-12, py-35, 18, 25, -0.3, 0, Math.PI*2);
+        ctx.fill();
+
+        // Wing
+        const wingGrad = ctx.createRadialGradient(px+15, py-10, 5, px+20, py-5, 35);
+        wingGrad.addColorStop(0, '#4CAF50');
+        wingGrad.addColorStop(0.5, '#388E3C');
+        wingGrad.addColorStop(1, '#2E7D32');
+        ctx.fillStyle = wingGrad;
+        ctx.beginPath();
+        ctx.ellipse(px+18, py-8, 32, 38, 0.2, 0, Math.PI*2);
+        ctx.fill();
+
+        // Wing highlight
+        ctx.fillStyle = 'rgba(255,255,255,0.2)';
+        ctx.beginPath();
+        ctx.ellipse(px+10, py-20, 12, 18, 0.2, 0, Math.PI*2);
+        ctx.fill();
+
+        // Wing feather tips
+        const wtips = ['#E53935', '#FB8C00', '#1E88E5'];
+        wtips.forEach((c, i) => {
+          ctx.fillStyle = c;
+          ctx.beginPath();
+          ctx.ellipse(px+42, py+5+i*8, 10, 5, 0.4+i*0.2, 0, Math.PI*2);
+          ctx.fill();
+        });
+
+        // Head
+        const headGrad = ctx.createRadialGradient(px+5, py-65, 5, px, py-62, 32);
+        headGrad.addColorStop(0, '#FFEE58');
+        headGrad.addColorStop(0.7, '#FDD835');
+        headGrad.addColorStop(1, '#FBC02D');
+        ctx.fillStyle = headGrad;
+        ctx.beginPath();
+        ctx.arc(px, py-62, 30, 0, Math.PI*2);
+        ctx.fill();
+
+        // Head highlight
+        ctx.fillStyle = 'rgba(255,255,255,0.3)';
+        ctx.beginPath();
+        ctx.ellipse(px-10, py-72, 10, 14, -0.3, 0, Math.PI*2);
+        ctx.fill();
+
+        // Eye (white)
+        ctx.fillStyle = '#FFFFFF';
+        ctx.beginPath();
+        ctx.arc(px+10, py-68, 11, 0, Math.PI*2);
+        ctx.fill();
+
+        // Eye (pupil)
+        ctx.fillStyle = '#212121';
+        ctx.beginPath();
+        ctx.arc(px+12, py-68, 6, 0, Math.PI*2);
+        ctx.fill();
+
+        // Eye shine
+        ctx.fillStyle = '#FFFFFF';
+        ctx.beginPath();
+        ctx.arc(px+14, py-71, 3, 0, Math.PI*2);
+        ctx.fill();
+
+        // Beak (upper)
+        ctx.fillStyle = '#FF6F00';
+        ctx.beginPath();
+        ctx.moveTo(px+22, py-62);
+        ctx.quadraticCurveTo(px+48, py-60, px+58, py-55);
+        ctx.quadraticCurveTo(px+50, py-48, px+24, py-56);
+        ctx.closePath();
+        ctx.fill();
+
+        // Beak highlight
+        ctx.fillStyle = 'rgba(255,255,255,0.3)';
+        ctx.beginPath();
+        ctx.moveTo(px+26, py-60);
+        ctx.quadraticCurveTo(px+44, py-58, px+52, py-55);
+        ctx.quadraticCurveTo(px+44, py-53, px+28, py-57);
+        ctx.closePath();
+        ctx.fill();
+
+        // Beak (lower)
+        ctx.fillStyle = '#E65100';
+        ctx.beginPath();
+        ctx.moveTo(px+24, py-56);
+        ctx.quadraticCurveTo(px+42, py-52, px+50, py-50);
+        ctx.quadraticCurveTo(px+38, py-44, px+22, py-52);
+        ctx.closePath();
+        ctx.fill();
+
+        // Crest feathers
+        [{c:'#E53935',a:-0.5},{c:'#FFD600',a:-0.2},{c:'#1E88E5',a:0.1}].forEach((f,i)=>{
+          ctx.fillStyle = f.c;
+          ctx.beginPath();
+          ctx.ellipse(px-5+i*6, py-95+i*3, 6, 18, f.a, 0, Math.PI*2);
+          ctx.fill();
+        });
+
+        // Feet
+        ctx.strokeStyle = '#5D4037';
+        ctx.lineWidth = 5;
+        ctx.lineCap = 'round';
+        // Left foot
+        ctx.beginPath(); ctx.moveTo(px-12, py+38); ctx.lineTo(px-20, py+52); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(px-12, py+38); ctx.lineTo(px-8, py+54); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(px-12, py+38); ctx.lineTo(px-2, py+52); ctx.stroke();
+        // Right foot
+        ctx.beginPath(); ctx.moveTo(px+12, py+38); ctx.lineTo(px+4, py+52); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(px+12, py+38); ctx.lineTo(px+16, py+54); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(px+12, py+38); ctx.lineTo(px+24, py+52); ctx.stroke();
+
+        // Tropical flowers
+        const drawFlower = (x, y, col, s) => {
+          ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
+          for(let i=0;i<5;i++){
+            ctx.rotate(Math.PI*2/5);
+            ctx.fillStyle = col;
+            ctx.beginPath(); ctx.ellipse(0,-12,6,12,0,0,Math.PI*2); ctx.fill();
+          }
+          ctx.fillStyle = '#FFD600';
+          ctx.beginPath(); ctx.arc(0,0,6,0,Math.PI*2); ctx.fill();
+          ctx.restore();
+        };
+        drawFlower(130, H-420, '#E91E63', 0.9);
+        drawFlower(600, H-380, '#9C27B0', 0.7);
+        drawFlower(720, H-440, '#FF5722', 0.8);
+
+        return canvas;
+      },
+
+      async loadSample() {
+        Toast.show('Loading sample image...', 'info');
+        try {
+          const canvas = Utils.createCanvas(1, 1);
+          this.drawParrot(canvas);
+
+          const blob = await Utils.canvasToBlob(canvas, 'image/png');
+          const file = new File([blob], 'parrot-clay-sample.png', { type: 'image/png' });
+          await Upload.addImage(file);
+          Upload.updateUI();
+          Toast.show('Parrot sample loaded! Click "Remove Background" to process.', 'success');
+          if (DOM['upload-zone']) DOM['upload-zone'].scrollIntoView({ behavior: 'smooth' });
+        } catch (err) {
+          Toast.show('Failed to load sample: ' + err.message, 'error');
+          console.error(err);
+        }
+      }
+    };
+
+    // ==================== KEYBOARD SHORTCUTS ====================
+    const Keyboard = {
+      init() {
+        document.addEventListener('keydown', (e) => {
+          if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) return;
+
+          if (e.ctrlKey || e.metaKey) {
+            switch (e.key.toLowerCase()) {
+              case 'u':
+                e.preventDefault();
+                DOM['file-input'].click();
+                break;
+              case 's':
+                e.preventDefault();
+                if (state.images[state.currentImageIndex]?.processedCanvas) {
+                  Preview.downloadCurrent('image/png', '.png');
+                }
+                break;
+              case 'v':
+                break;
+              case 'z':
+                e.preventDefault();
+                const img = state.images[state.currentImageIndex];
+                if (img) {
+                  img.processedCanvas = null;
+                  img.maskData = null;
+                  img.status = 'pending';
+                  Upload.updateUI();
+                  Preview.hide();
+                }
+                break;
+            }
+          }
+
+          if (e.key === 'Escape') {
+            DOM['settings-drawer'].checked = false;
+            if (document.fullscreenElement) document.exitFullscreen();
+          }
+        });
+      }
+    };
+
+    // ==================== INIT ====================
+    let Confetti = null;
+
+    function init() {
+      try {
+        cacheDOM();
+        Toast.init();
+
+        // Warn about file:// protocol limitations
+        if (isFileProtocol) {
+          Toast.show('Tip: Use a local server (npx serve) for best model loading. See browser console for details.', 'warning', 8000);
+          console.warn('%c file:// Protocol Detected ', 'background: #e74c3c; color: #fff; font-size: 14px; padding: 4px 8px; border-radius: 4px;');
+          console.warn('You opened this file directly. Model download from HuggingFace may fail due to CORS.');
+          console.warn('Fix: Run a local server: npx serve .  or  python3 -m http.server 8080');
+          console.warn('Then open: http://localhost:8080/bg-remove.html');
+        }
+
+        const particleCanvas = DOM['particle-canvas'];
+        if (particleCanvas) new ParticleSystem(particleCanvas);
+
+        const confettiCanvas = DOM['confetti-canvas'];
+        if (confettiCanvas) Confetti = new ConfettiSystem(confettiCanvas);
+
+        Theme.init();
+        Upload.init();
+        Processing.init();
+        Preview.init();
+        Settings.init();
+        Navigation.init();
+        WelcomeModal.init();
+        SampleImage.init();
+        Keyboard.init();
+
+        const themeToggle = DOM['theme-toggle'];
+        if (themeToggle) {
+          themeToggle.addEventListener('click', () => {
+            Theme.toggle();
+            Settings.save();
+          });
+        }
+
+        const statEl = document.getElementById('stat-images');
+        if (statEl) statEl.textContent = state.sessionStats.imagesProcessed;
+
+        console.log('%c Parrobyte ', 'background: #FFD600; color: #000; font-size: 20px; font-weight: bold; padding: 8px 16px; border-radius: 8px;');
+        console.log('%c Initialized and ready! ', 'color: #FFD600; font-size: 14px;');
+      } catch (err) {
+        console.error('Init error:', err);
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  </script>
+</body>
+</html>
