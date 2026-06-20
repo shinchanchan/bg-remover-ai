@@ -1203,7 +1203,7 @@
           <i class="fas fa-crow text-xl"></i>
           Remove Background
         </button>
-        <p class="text-sm text-base-content/50 mt-4" id="model-status-text">AI model downloads on first use (~40MB). Use local server for best results.</p>
+        <p class="text-sm text-base-content/50 mt-4" id="model-status-text">U2-Net AI model downloads on first use (~176MB). Detects people, objects, animals. Use local server for best results.</p>
       </div>
     </div>
   </section>
@@ -1485,9 +1485,9 @@
             <h5 class="font-bold text-sm mb-3 flex items-center gap-2"><i class="fas fa-adjust text-primary"></i>Threshold</h5>
             <div class="mb-2">
               <div class="flex justify-between text-xs mb-1">
-                <span>Soft</span><span id="threshold-value">128</span><span>Hard</span>
+                <span>Soft</span><span id="threshold-value">70</span><span>Hard</span>
               </div>
-              <input type="range" id="threshold-slider" min="0" max="255" value="128" class="w-full">
+              <input type="range" id="threshold-slider" min="0" max="255" value="70" class="w-full">
             </div>
           </div>
 
@@ -1709,10 +1709,10 @@
           <div>
             <label class="text-sm font-semibold mb-2 block">Model Precision</label>
             <div class="flex items-center justify-between">
-              <span class="text-sm">Use Quantized Model</span>
-              <div class="toggle-switch active" id="setting-quantized-toggle"></div>
+              <span class="text-sm">Use Quantized Model (Faster)</span>
+              <div class="toggle-switch" id="setting-quantized-toggle"></div>
             </div>
-            <p class="text-xs text-base-content/50 mt-1">Quantized models load faster with slightly lower quality.</p>
+            <p class="text-xs text-base-content/50 mt-1">Full quality is default. Enable quantized for faster loading but lower edge quality.</p>
           </div>
 
           <!-- Theme -->
@@ -1894,7 +1894,7 @@
 
     // ==================== CONFIGURATION ====================
     const CONFIG = {
-      MODEL_ID: 'Xenova/modnet',
+      MODEL_ID: 'Xenova/u2net',
       MAX_IMAGE_SIZE: 2048,
       SUPPORTED_MIMETYPES: ['image/jpeg', 'image/png', 'image/webp', 'image/bmp', 'image/tiff', 'image/avif', 'image/heic', 'image/heif'],
       SUPPORTED_EXTENSIONS: ['.jpg', '.jpeg', '.png', '.webp', '.bmp', '.tiff', '.tif', '.avif', '.heic', '.heif'],
@@ -1916,7 +1916,7 @@
         outputFormat: 'png',
         quality: 0.95,
         processingMode: 'balanced',
-        quantized: true,
+        quantized: false,
         edgeRefinement: 0,
         feather: 0,
         threshold: 128,
@@ -2647,20 +2647,24 @@
           const loadOptions = {
             progress_callback: progressCallback,
             quantized: state.settings.quantized,
+            revision: 'main',
           };
+
+          Toast.show('Downloading AI model (one-time, ~176MB)...', 'info', 0);
 
           state.model = await AutoModel.from_pretrained(CONFIG.MODEL_ID, loadOptions);
           state.processor = await AutoProcessor.from_pretrained(CONFIG.MODEL_ID, {
             progress_callback: progressCallback,
+            revision: 'main',
           });
 
           state.isModelLoaded = true;
           state.isModelLoading = false;
           if (mdp) mdp.classList.add('hidden');
           if (pt) pt.textContent = 'AI Model Ready';
-          if (pd) pd.textContent = 'The AI model is loaded and ready to process images.';
+          if (pd) pd.textContent = 'U2-Net model loaded. Detects any object: people, products, animals, vehicles.';
           if (mst) mst.textContent = 'AI model ready';
-          Toast.show('AI model loaded successfully', 'success');
+          Toast.show('U2-Net AI model loaded! Ready to remove backgrounds.', 'success');
 
           await Utils.delay(1500);
           if (!state.isProcessing && proc) {
@@ -2736,21 +2740,54 @@
         if (cip) cip.textContent = '80%';
         if (cib) cib.value = 80;
 
-        // Try multiple possible output keys for model compatibility
-        const maskTensor = outputs.matte || outputs.output || outputs.predicted_alpha || outputs.logits || outputs.mask || outputs[0] || Object.values(outputs)[0];
+        // U2-Net outputs saliency map. Handle various output formats.
+        let maskTensor = null;
+        if (outputs && typeof outputs === 'object') {
+          // Try named outputs first
+          const keys = Object.keys(outputs);
+          for (const key of ['output', 'logits', 'mask', 'predicted_mask', 'saliency', 'pred_saliency', 'matte', 'alpha']) {
+            if (outputs[key] != null) { maskTensor = outputs[key]; break; }
+          }
+          // Try numeric index
+          if (!maskTensor && keys.length > 0) {
+            for (const key of keys) {
+              const v = outputs[key];
+              if (v && v.dims && v.dims.length >= 2) { maskTensor = v; break; }
+            }
+          }
+          // Last resort: first value
+          if (!maskTensor) maskTensor = outputs[keys[0]];
+        }
         if (!maskTensor) {
-          throw new Error('Model returned no recognizable output. Keys: ' + Object.keys(outputs).join(', '));
+          throw new Error('U2-Net returned no usable output. Keys: ' + Object.keys(outputs || {}).join(', '));
         }
-        const squeezed = maskTensor.squeeze ? maskTensor.squeeze() : maskTensor;
-        const maskH = squeezed.dims[squeezed.dims.length - 2];
-        const maskW = squeezed.dims[squeezed.dims.length - 1];
-        const maskData = squeezed.data;
 
+        // Squeeze and extract dimensions
+        let tensor = maskTensor;
+        if (tensor.squeeze) tensor = tensor.squeeze();
+        const dims = tensor.dims || tensor.shape || [];
+        const maskH = dims[dims.length - 2] || dims[0];
+        const maskW = dims[dims.length - 1] || dims[1];
+        const rawData = tensor.data;
+
+        // Normalize to 0-1 range (U2-Net uses sigmoid, may need normalization)
         const floatMask = new Float32Array(maskH * maskW);
-        for (let i = 0; i < floatMask.length; i++) {
-          floatMask[i] = Math.max(0, Math.min(1, maskData[i]));
+        let minV = Infinity, maxV = -Infinity;
+        for (let i = 0; i < rawData.length; i++) {
+          const v = rawData[i];
+          if (v < minV) minV = v;
+          if (v > maxV) maxV = v;
+        }
+        const range = maxV - minV;
+        if (range > 0.001) {
+          for (let i = 0; i < floatMask.length; i++) {
+            floatMask[i] = Math.max(0, Math.min(1, (rawData[i] - minV) / range));
+          }
+        } else {
+          for (let i = 0; i < floatMask.length; i++) floatMask[i] = Math.max(0, Math.min(1, rawData[i]));
         }
 
+        // Resize back to original dimensions
         const resizedMask = this.resizeMaskBilinear(floatMask, maskW, maskH, origW, origH);
 
         if (cip) cip.textContent = '100%';
@@ -3126,29 +3163,52 @@
         const orig = imageData.originalCanvas;
         const w = orig.width;
         const h = orig.height;
-        let mask = new Float32Array(imageData.maskData);
+        const mask = new Float32Array(imageData.maskData);
 
+        // U2-Net produces a good saliency map. We do MINIMAL processing:
+        // the model already detected the object well. Extra filters just
+        // destroy thin structures (hair, fingers, object edges).
+
+        // Step 1: Optional soft threshold. Default is very conservative
+        // (threshold 70 = smooth transition) to preserve semi-transparent
+        // edges like hair, fur, and glass.
         const threshold = state.settings.threshold / 255;
-        for (let i = 0; i < mask.length; i++) {
-          mask[i] = mask[i] < threshold ? 0 : mask[i];
+        const smoothRange = 0.3; // 30% smooth band - very gentle
+        if (threshold > 0.01) {
+          for (let i = 0; i < mask.length; i++) {
+            const v = mask[i];
+            if (v < threshold - smoothRange) {
+              mask[i] = 0;
+            } else if (v > threshold + smoothRange) {
+              mask[i] = v; // keep original model value
+            } else {
+              // Smoothstep transition
+              const t = (v - (threshold - smoothRange)) / (smoothRange * 2);
+              mask[i] = v * (t * t * (3 - 2 * t));
+            }
+          }
         }
 
+        // Step 2: User feather (optional, off by default)
+        let finalMask = mask;
         if (state.settings.feather > 0) {
-          mask = this.featherMask(mask, w, h, state.settings.feather);
+          finalMask = this.featherMask(finalMask, w, h, state.settings.feather);
         }
 
-        if (state.settings.edgeRefinement !== 0) {
-          mask = this.refineEdges(mask, w, h, state.settings.edgeRefinement);
-        }
+        // NO bilateral filtering - destroys hair and thin edges.
+        // NO morphological cleanup - removes fingers, ears, etc.
+        // NO edge refinement - U2-Net already gives good edges.
+        // Trust the model.
 
+        // Step 3: Compose - keep original RGB, apply mask to alpha
         const canvas = Utils.createCanvas(w, h);
         const ctx = canvas.getContext('2d');
         ctx.drawImage(orig, 0, 0);
         const imgData = ctx.getImageData(0, 0, w, h);
         const data = imgData.data;
 
-        for (let i = 0; i < mask.length; i++) {
-          data[i * 4 + 3] = Math.round(Utils.clamp(mask[i], 0, 1) * 255);
+        for (let i = 0; i < finalMask.length; i++) {
+          data[i * 4 + 3] = Math.round(Utils.clamp(finalMask[i], 0, 1) * 255);
         }
         ctx.putImageData(imgData, 0, 0);
 
@@ -3158,7 +3218,7 @@
         }
 
         imageData.processedCanvas = canvas;
-        imageData.maskData = mask;
+        imageData.maskData = finalMask;
 
         await Preview.applyBackgroundEffect(imageData);
       },
@@ -3202,11 +3262,29 @@
         return result;
       },
 
-      refineEdges(mask, w, h, amount) {
+      refineEdges(mask, imgData, w, h, amount) {
         if (amount === 0) return mask;
         const result = new Float32Array(mask.length);
-        const sharpened = new Float32Array(mask.length);
-        const strength = amount / 50;
+        const strength = Math.abs(amount) / 50;
+
+        // Compute image edge magnitude from RGB
+        const edgeMag = new Float32Array(mask.length);
+        for (let y = 1; y < h - 1; y++) {
+          for (let x = 1; x < w - 1; x++) {
+            const i = y * w + x;
+            const dx = (
+              Math.abs(imgData[(i - 1) * 4] - imgData[(i + 1) * 4]) +
+              Math.abs(imgData[(i - 1) * 4 + 1] - imgData[(i + 1) * 4 + 1]) +
+              Math.abs(imgData[(i - 1) * 4 + 2] - imgData[(i + 1) * 4 + 2])
+            );
+            const dy = (
+              Math.abs(imgData[(i - w) * 4] - imgData[(i + w) * 4]) +
+              Math.abs(imgData[(i - w) * 4 + 1] - imgData[(i + w) * 4 + 1]) +
+              Math.abs(imgData[(i - w) * 4 + 2] - imgData[(i + w) * 4 + 2])
+            );
+            edgeMag[i] = (dx + dy) / 3 / 255;
+          }
+        }
 
         for (let y = 1; y < h - 1; y++) {
           for (let x = 1; x < w - 1; x++) {
@@ -3215,13 +3293,85 @@
               mask[(y - 1) * w + x] + mask[(y + 1) * w + x] +
               mask[y * w + x - 1] + mask[y * w + x + 1]
             ) * 0.25;
-            sharpened[i] = Utils.clamp(mask[i] + (mask[i] - blurred) * strength * 0.5, 0, 1);
+
+            // Edge-aware: less sharpening at image edges
+            const edgeWeight = 1 - Math.min(edgeMag[i] * 2, 1);
+            const s = strength * edgeWeight;
+            result[i] = Utils.clamp(mask[i] + (mask[i] - blurred) * s, 0, 1);
           }
         }
 
-        for (let i = 0; i < mask.length; i++) {
-          if (sharpened[i] === 0) sharpened[i] = mask[i];
-          result[i] = sharpened[i];
+        // Copy untouched borders
+        for (let x = 0; x < w; x++) { result[x] = mask[x]; result[(h - 1) * w + x] = mask[(h - 1) * w + x]; }
+        for (let y = 0; y < h; y++) { result[y * w] = mask[y * w]; result[y * w + w - 1] = mask[y * w + w - 1]; }
+        return result;
+      },
+
+      // Edge-aware bilateral filter: smooths mask while preserving alignment with image edges
+      bilateralFilterMask(mask, imgData, w, h, radius, sigmaColor) {
+        const result = new Float32Array(mask.length);
+        const sigmaSpatial = radius;
+        const twoSigmaS = 2 * sigmaSpatial * sigmaSpatial;
+        const twoSigmaC = 2 * sigmaColor * sigmaColor;
+
+        for (let y = 0; y < h; y++) {
+          for (let x = 0; x < w; x++) {
+            const ci = (y * w + x) * 4;
+            const cR = imgData[ci];
+            const cG = imgData[ci + 1];
+            const cB = imgData[ci + 2];
+            const centerM = mask[y * w + x];
+
+            let sum = 0, weightSum = 0;
+            for (let ky = -radius; ky <= radius; ky++) {
+              const py = Utils.clamp(y + ky, 0, h - 1);
+              for (let kx = -radius; kx <= radius; kx++) {
+                const px = Utils.clamp(x + kx, 0, w - 1);
+                const pi = (py * w + px) * 4;
+                const pR = imgData[pi];
+                const pG = imgData[pi + 1];
+                const pB = imgData[pi + 2];
+
+                const dS = kx * kx + ky * ky;
+                const dC = ((pR - cR) * (pR - cR) + (pG - cG) * (pG - cG) + (pB - cB) * (pB - cB)) / (255 * 255 * 3);
+                const weight = Math.exp(-dS / twoSigmaS - dC / twoSigmaC);
+
+                sum += mask[py * w + px] * weight;
+                weightSum += weight;
+              }
+            }
+            result[y * w + x] = weightSum > 0 ? sum / weightSum : centerM;
+          }
+        }
+        return result;
+      },
+
+      // VERY gentle cleanup: only removes isolated single-pixel noise.
+      // We deliberately preserve thin structures (hair, fingers, ears,
+      // antennae) by only touching pixels with ZERO same-label neighbors.
+      // The old >=7 neighbor check destroyed human body parts.
+      gentleCleanup(mask, w, h) {
+        const result = new Float32Array(mask);
+
+        for (let y = 1; y < h - 1; y++) {
+          for (let x = 1; x < w - 1; x++) {
+            const i = y * w + x;
+            const isFg = mask[i] > 0.5;
+            let sameNeighbors = 0;
+            for (let dy = -1; dy <= 1; dy++) {
+              for (let dx = -1; dx <= 1; dx++) {
+                if (dx === 0 && dy === 0) continue;
+                const ni = (y + dy) * w + (x + dx);
+                const nFg = mask[ni] > 0.5;
+                if (nFg === isFg) sameNeighbors++;
+              }
+            }
+            // Only remove COMPLETELY isolated pixels (0 same neighbors)
+            // This catches lone noise specks without touching body parts
+            if (sameNeighbors === 0) {
+              result[i] = isFg ? 0 : 1; // Flip isolated pixel
+            }
+          }
         }
         return result;
       },
@@ -3246,7 +3396,8 @@
 
       cancel() {
         state.cancelProcessing = true;
-        DOM['processing-desc'].textContent = 'Cancelling...';
+        const pd = DOM['processing-desc'];
+        if (pd) pd.textContent = 'Cancelling...';
       },
     };
 
@@ -3777,7 +3928,7 @@
             quantized: true,
             edgeRefinement: 0,
             feather: 0,
-            threshold: 128,
+            threshold: 70,
             autoCrop: false,
             cropPadding: 10,
             backgroundType: 'transparent',
